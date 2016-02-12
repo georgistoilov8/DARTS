@@ -104,9 +104,9 @@
             this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel4);
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 677);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 557);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1596, 84);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1362, 84);
             this.flowLayoutPanel5.TabIndex = 171;
             // 
             // button2
@@ -114,7 +114,7 @@
             this.button2.AutoSize = true;
             this.button2.Cursor = System.Windows.Forms.Cursors.PanEast;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button2.Location = new System.Drawing.Point(1427, 3);
+            this.button2.Location = new System.Drawing.Point(1193, 3);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 36);
@@ -125,7 +125,7 @@
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.Controls.Add(this.button1);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(12, 3);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(-50, 45);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(1409, 81);
             this.flowLayoutPanel4.TabIndex = 12;
@@ -149,16 +149,16 @@
             this.flowLayoutPanel6.Controls.Add(this.changeColor);
             this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 761);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 641);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(1596, 100);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(1362, 100);
             this.flowLayoutPanel6.TabIndex = 170;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(1535, 25);
+            this.label2.Location = new System.Drawing.Point(1301, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
@@ -169,7 +169,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(1481, 25);
+            this.label1.Location = new System.Drawing.Point(1247, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
@@ -181,7 +181,7 @@
             this.changeColor.AutoSize = true;
             this.changeColor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.changeColor.Location = new System.Drawing.Point(1194, 20);
+            this.changeColor.Location = new System.Drawing.Point(960, 20);
             this.changeColor.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.changeColor.Name = "changeColor";
             this.changeColor.Size = new System.Drawing.Size(281, 30);
@@ -436,7 +436,7 @@
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 95);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1596, 49);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1362, 49);
             this.flowLayoutPanel3.TabIndex = 139;
             // 
             // label123
@@ -456,7 +456,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 53);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1596, 42);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1362, 42);
             this.flowLayoutPanel2.TabIndex = 137;
             // 
             // label4
@@ -477,7 +477,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1596, 53);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1362, 53);
             this.flowLayoutPanel1.TabIndex = 138;
             // 
             // timer12
@@ -684,7 +684,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1596, 861);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -738,7 +738,7 @@
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.MinimumSize = new System.Drawing.Size(1598, 900);
+            this.MinimumSize = new System.Drawing.Size(1364, 736);
             this.Name = "Form12";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form12";
