@@ -36,9 +36,6 @@ namespace Darts
             if (f3 == null)
                 f3 = new Form3();
         }
-        
-        
-       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -76,6 +73,7 @@ namespace Darts
             {
                 button4.Enabled = false;
             }
+            
                    
         }
 
@@ -231,6 +229,124 @@ namespace Darts
             isRefresh = true;
             if (isRefresh)
             {
+                if(label10.Text == "-" && label11.Text != "-")
+                {
+                    label18.Text = label11.Text;
+                    n2.Value = 3;
+                }
+                if (label11.Text == "-" && label10.Text != "-")
+                {
+                    label18.Text = label10.Text;
+                    n1.Value = 3;
+                }
+                if(label11.Text == "-" && label10.Text == "-")
+                {
+                    label18.Text = "-";
+                    n1.Value = 3;
+                }
+
+
+                if (label12.Text == "-" && label13.Text != "-")
+                {
+                    label19.Text = label13.Text;
+                    n4.Value = 3;
+                }
+                if (label13.Text == "-" && label12.Text != "-")
+                {
+                    label19.Text = label12.Text;
+                    n3.Value = 3;
+                }
+                if(label12.Text == "-" && label13.Text == "-")
+                {
+                    label19.Text = "-";
+                    n4.Value = 3;
+                }
+
+
+                if (label14.Text == "-" && label15.Text != "-")
+                {
+                    label20.Text = label15.Text;
+                    n5.Value = 3;
+                }
+                else if (label15.Text == "-" && label14.Text != "-")
+                {
+                    label20.Text = label14.Text;
+                    n6.Value = 3;
+                }
+                else if (label15.Text == "-" && label14.Text == "-")
+                {
+                    label20.Text = "-";
+                    n6.Value = 3;
+                }
+
+
+                if (label16.Text == "-" && label17.Text != "-")
+                {
+                    label21.Text = label17.Text;
+                    n7.Value = 3;
+                }
+                else if (label17.Text == "-" && label16.Text != "-")
+                {
+                    label21.Text = label16.Text;
+                    n8.Value = 3;
+                }
+                else if (label17.Text == "-" && label16.Text == "-")
+                {
+                    label21.Text = "-";
+                    n8.Value = 3;
+                }
+
+
+                if (label18.Text == "-" && label19.Text != "-")
+                {
+                    label22.Text = label19.Text;
+                    n10.Value = 3;
+                }
+                else if (label19.Text == "-" && label18.Text != "-")
+                {
+                    label22.Text = label18.Text;
+                    n9.Value = 3;
+                }
+                else if (label19.Text == "-" && label18.Text == "-")
+                {
+                    label22.Text = "-";
+                    n9.Value = 3;
+                }
+
+
+                if (label20.Text == "-" && label21.Text != "-")
+                {
+                    label23.Text = label21.Text;
+                    n12.Value = 3;
+                }
+                else if (label21.Text == "-" && label20.Text != "-")
+                {
+                    label23.Text = label20.Text;
+                    n11.Value = 3;
+                }
+                else if (label20.Text == "-" && label21.Text == "-")
+                {
+                    label23.Text = "-";
+                    n11.Value = 3;
+                }
+
+
+                if (label22.Text == "-" && label23.Text != "-")
+                {
+                    label24.Text = label23.Text;
+                    n14.Value = 3;
+                }
+                else if (label23.Text == "-" && label22.Text != "-")
+                {
+                    label24.Text = label22.Text;
+                    n13.Value = 3;
+                }
+                else if (label23.Text == "-" && label22.Text == "-")
+                {
+                    label24.Text = "-";
+                    n13.Value = 3;
+                }
+
                 if (n1.Value == 3 && n2.Value == 3)
                 {
                     MessageBox.Show("You give same numbers");
@@ -249,16 +365,16 @@ namespace Darts
                     label18.Text = null;
                 }
 
-                if (n3.Value == 3 && n4.Value == 3)
+                if (n4.Value == 3 && n3.Value == 3)
                 {
                     MessageBox.Show("You give same numbers");
                     label19.Text = null;
                 }else
-                if (n4.Value == 3)
+                if (n3.Value == 3)
                 {
                     label19.Text = label12.Text;
                 }
-                else if (n3.Value == 3)
+                else if (n4.Value == 3)
                 {
                     label19.Text = label13.Text;
                 }
@@ -360,6 +476,43 @@ namespace Darts
             }
             
             isRefresh = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(label10.Text == "  ")
+            {
+                label10.Text = "-";
+            }
+            if (label11.Text == "  ")
+            {
+                label11.Text = "-";
+            }
+            if (label12.Text == "  ")
+            {
+                label12.Text = "-";
+            }
+            if (label13.Text == "  ")
+            {
+                label13.Text = "-";
+            }
+            if (label14.Text == "  ")
+            {
+                label14.Text = "-";
+            }
+            if (label15.Text == "  ")
+            {
+                label15.Text = "-";
+            }
+            if (label16.Text == "  ")
+            {
+                label16.Text = "-";
+            }
+            if (label17.Text == "  ")
+            {
+                label17.Text = "-";
+            }
+            count = 8;
         }
     }
 }

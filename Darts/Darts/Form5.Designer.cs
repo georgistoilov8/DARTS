@@ -70,8 +70,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.n1 = new System.Windows.Forms.NumericUpDown();
             this.n2 = new System.Windows.Forms.NumericUpDown();
-            this.n3 = new System.Windows.Forms.NumericUpDown();
             this.n4 = new System.Windows.Forms.NumericUpDown();
+            this.n3 = new System.Windows.Forms.NumericUpDown();
             this.n5 = new System.Windows.Forms.NumericUpDown();
             this.n6 = new System.Windows.Forms.NumericUpDown();
             this.n7 = new System.Windows.Forms.NumericUpDown();
@@ -90,6 +90,7 @@
             this.n12 = new System.Windows.Forms.NumericUpDown();
             this.n13 = new System.Windows.Forms.NumericUpDown();
             this.n14 = new System.Windows.Forms.NumericUpDown();
+            this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
@@ -97,8 +98,8 @@
             this.flowLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.n1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.n3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n7)).BeginInit();
@@ -488,7 +489,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(1204, 161);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 20);
+            this.textBox1.Size = new System.Drawing.Size(263, 20);
             this.textBox1.TabIndex = 153;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
@@ -496,7 +497,7 @@
             // 
             this.button4.AutoSize = true;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(1246, 196);
+            this.button4.Location = new System.Drawing.Point(1204, 196);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 35);
             this.button4.TabIndex = 152;
@@ -530,22 +531,9 @@
             this.n2.TabIndex = 155;
             this.n2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // n3
-            // 
-            this.n3.Location = new System.Drawing.Point(196, 346);
-            this.n3.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.n3.Name = "n3";
-            this.n3.Size = new System.Drawing.Size(38, 20);
-            this.n3.TabIndex = 157;
-            this.n3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
-            // 
             // n4
             // 
-            this.n4.Location = new System.Drawing.Point(196, 306);
+            this.n4.Location = new System.Drawing.Point(196, 346);
             this.n4.Maximum = new decimal(new int[] {
             3,
             0,
@@ -553,8 +541,21 @@
             0});
             this.n4.Name = "n4";
             this.n4.Size = new System.Drawing.Size(38, 20);
-            this.n4.TabIndex = 156;
-            this.n4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
+            this.n4.TabIndex = 157;
+            this.n4.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
+            // 
+            // n3
+            // 
+            this.n3.Location = new System.Drawing.Point(196, 306);
+            this.n3.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.n3.Name = "n3";
+            this.n3.Size = new System.Drawing.Size(38, 20);
+            this.n3.TabIndex = 156;
+            this.n3.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
             // 
             // n5
             // 
@@ -769,11 +770,24 @@
             this.n14.Size = new System.Drawing.Size(38, 20);
             this.n14.TabIndex = 181;
             // 
+            // button5
+            // 
+            this.button5.AutoSize = true;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(1378, 198);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 35);
+            this.button5.TabIndex = 182;
+            this.button5.Text = "Готово";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1588, 861);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.n14);
             this.Controls.Add(this.n13);
             this.Controls.Add(this.n12);
@@ -792,8 +806,8 @@
             this.Controls.Add(this.n8);
             this.Controls.Add(this.n5);
             this.Controls.Add(this.n6);
-            this.Controls.Add(this.n3);
             this.Controls.Add(this.n4);
+            this.Controls.Add(this.n3);
             this.Controls.Add(this.n2);
             this.Controls.Add(this.n1);
             this.Controls.Add(this.textBox1);
@@ -842,8 +856,8 @@
             this.flowLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.n1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.n3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n7)).EndInit();
@@ -902,8 +916,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.NumericUpDown n1;
         private System.Windows.Forms.NumericUpDown n2;
-        private System.Windows.Forms.NumericUpDown n3;
         private System.Windows.Forms.NumericUpDown n4;
+        private System.Windows.Forms.NumericUpDown n3;
         private System.Windows.Forms.NumericUpDown n5;
         private System.Windows.Forms.NumericUpDown n6;
         private System.Windows.Forms.NumericUpDown n7;
@@ -922,5 +936,6 @@
         private System.Windows.Forms.NumericUpDown n12;
         private System.Windows.Forms.NumericUpDown n13;
         private System.Windows.Forms.NumericUpDown n14;
+        private System.Windows.Forms.Button button5;
     }
 }
