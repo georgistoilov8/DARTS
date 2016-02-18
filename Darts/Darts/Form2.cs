@@ -153,5 +153,13 @@ namespace Darts
             radiobutton2 = true;
             radiobutton1 = false;
         }
+
+        private void Form2_Load_1(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.MinimumSize = new Size(840, 640);
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.CenterToScreen();
+        }
     }
 }

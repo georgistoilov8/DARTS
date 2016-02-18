@@ -39,6 +39,7 @@
             // 
             // button1
             // 
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.Location = new System.Drawing.Point(334, 172);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(193, 37);
@@ -108,6 +109,7 @@
             this.Location = new System.Drawing.Point(500, 400);
             this.Name = "Form_StartUP";
             this.Text = "Form_StartUP";
+            this.Load += new System.EventHandler(this.Form_StartUP_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

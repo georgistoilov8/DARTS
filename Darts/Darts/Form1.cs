@@ -24,6 +24,8 @@ namespace Darts
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
         }
         private void button1_Click(object sender, EventArgs e)
         {  
@@ -157,7 +159,10 @@ namespace Darts
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-
+            this.AutoSize = true;
+            this.MinimumSize = new Size(840, 640);
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.CenterToScreen();
         }
         
     }

@@ -132,7 +132,6 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.ScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -1157,13 +1156,6 @@
             this.label41.TabIndex = 206;
             this.label41.Text = "label41";
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(0, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 80);
-            this.vScrollBar1.TabIndex = 207;
-            // 
             // ScrollBar1
             // 
             this.ScrollBar1.Location = new System.Drawing.Point(1562, 147);
@@ -1176,7 +1168,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1588, 1173);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.ScrollBar1);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label40);
@@ -1396,7 +1387,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.VScrollBar ScrollBar1;
     }
 }

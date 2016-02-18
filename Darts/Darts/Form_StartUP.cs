@@ -17,9 +17,17 @@ namespace Darts
             InitializeComponent();
         }
 
+        private void Form_StartUP_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.MinimumSize = new Size(840, 640);
+            this.AutoSizeMode = AutoSizeMode.GrowOnly;
+            this.CenterToScreen();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         Form f1;

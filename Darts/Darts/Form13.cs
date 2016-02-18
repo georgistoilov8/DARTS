@@ -282,5 +282,10 @@ namespace Darts
                 textBox1.Text = arrValues[o].ToString();
             }
         }
+
+        private void textBox39_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

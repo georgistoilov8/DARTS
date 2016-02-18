@@ -217,5 +217,13 @@ namespace Darts
             f2.Show();
             this.Hide();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.MinimumSize = new Size(840, 640);
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.CenterToScreen();
+        }
     }
 }

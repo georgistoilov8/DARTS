@@ -119,7 +119,10 @@ namespace Darts
 
         private void Form4_Load_1(object sender, EventArgs e)
         {
-
+            this.AutoSize = true;
+            this.MinimumSize = new Size(840, 640);
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.CenterToScreen();
         }
 
         private void button1_Click(object sender, EventArgs e)
