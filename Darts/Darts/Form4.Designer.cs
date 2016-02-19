@@ -101,7 +101,7 @@
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(280, 168);
+            this.label3.Location = new System.Drawing.Point(280, 99);
             this.label3.Margin = new System.Windows.Forms.Padding(6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(223, 24);
@@ -236,10 +236,10 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 84);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.82828F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.17171F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 396);
-            this.tableLayoutPanel1.TabIndex = 25;
+            this.tableLayoutPanel1.TabIndex = 16;
             // 
             // tableLayoutPanel2
             // 
@@ -250,7 +250,7 @@
             this.tableLayoutPanel2.Controls.Add(this.radioButton2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.radioButton3, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(277, 201);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(277, 132);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));

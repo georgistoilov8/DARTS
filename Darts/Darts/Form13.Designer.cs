@@ -308,12 +308,12 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1362, 741);
+            this.panel1.Size = new System.Drawing.Size(1264, 985);
             this.panel1.TabIndex = 241;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(349, 1089);
+            this.textBox1.Location = new System.Drawing.Point(681, 1001);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(242, 20);
             this.textBox1.TabIndex = 302;
@@ -322,7 +322,7 @@
             // 
             this.button4.AutoSize = true;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(597, 1078);
+            this.button4.Location = new System.Drawing.Point(721, 1032);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 35);
             this.button4.TabIndex = 301;
@@ -334,9 +334,9 @@
             this.flowLayoutPanel4.Controls.Add(this.button2);
             this.flowLayoutPanel4.Controls.Add(this.flowLayoutPanel6);
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 1113);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 1085);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1569, 111);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(1569, 43);
             this.flowLayoutPanel4.TabIndex = 300;
             // 
             // button2
@@ -356,16 +356,16 @@
             this.flowLayoutPanel6.Controls.Add(this.label1);
             this.flowLayoutPanel6.Controls.Add(this.changeColor);
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 45);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(113, 3);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(1471, 35);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(1361, 32);
             this.flowLayoutPanel6.TabIndex = 203;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(1410, 5);
+            this.label2.Location = new System.Drawing.Point(1300, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
@@ -376,7 +376,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(1356, 5);
+            this.label1.Location = new System.Drawing.Point(1246, 5);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
@@ -388,7 +388,7 @@
             this.changeColor.AutoSize = true;
             this.changeColor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.changeColor.Location = new System.Drawing.Point(1069, 0);
+            this.changeColor.Location = new System.Drawing.Point(959, 0);
             this.changeColor.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.changeColor.Name = "changeColor";
             this.changeColor.Size = new System.Drawing.Size(281, 30);
@@ -1201,13 +1201,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1264, 985);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.MinimumSize = new System.Drawing.Size(1364, 736);
+            this.MinimumSize = new System.Drawing.Size(840, 640);
             this.Name = "Form13";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form13";
+            this.Load += new System.EventHandler(this.Form13_Load);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);

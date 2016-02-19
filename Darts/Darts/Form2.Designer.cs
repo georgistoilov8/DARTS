@@ -171,7 +171,7 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(280, 167);
+            this.label3.Location = new System.Drawing.Point(280, 99);
             this.label3.Margin = new System.Windows.Forms.Padding(6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(223, 24);
@@ -184,10 +184,10 @@
             this.radioButton1.BackColor = System.Drawing.SystemColors.Control;
             this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.radioButton1.Location = new System.Drawing.Point(6, 42);
+            this.radioButton1.Location = new System.Drawing.Point(6, 47);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(217, 24);
+            this.radioButton1.Size = new System.Drawing.Size(217, 29);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Отборно";
@@ -202,7 +202,7 @@
             this.radioButton2.Location = new System.Drawing.Point(6, 6);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(6);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(217, 24);
+            this.radioButton2.Size = new System.Drawing.Size(217, 29);
             this.radioButton2.TabIndex = 0;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Индивидуално";
@@ -224,8 +224,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 84);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.99492F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.00507F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 394);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
@@ -236,12 +236,12 @@
             this.tableLayoutPanel2.Controls.Add(this.radioButton2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.radioButton1, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(277, 200);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(277, 132);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(229, 72);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(229, 83);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // Form2

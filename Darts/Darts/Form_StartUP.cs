@@ -25,6 +25,8 @@ namespace Darts
             this.CenterToScreen();
         }
 
+       
+
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -47,5 +49,10 @@ namespace Darts
             DateTime d = DateTime.Now;
             label2.Text = d.ToLongDateString();
         }
-    }
+
+        public void CloseAll()
+        {
+           Close();
+        }
+}
 }

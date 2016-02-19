@@ -42,6 +42,7 @@
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -119,7 +120,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button1.Location = new System.Drawing.Point(274, 199);
+            this.button1.Location = new System.Drawing.Point(274, 194);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 32);
@@ -132,7 +133,7 @@
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.textBox1.Location = new System.Drawing.Point(277, 169);
+            this.textBox1.Location = new System.Drawing.Point(277, 164);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(229, 27);
             this.textBox1.TabIndex = 8;
@@ -168,9 +169,9 @@
             this.flowLayoutPanel5.Controls.Add(this.button2);
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 482);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 472);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(784, 39);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(784, 49);
             this.flowLayoutPanel5.TabIndex = 12;
             // 
             // tableLayoutPanel1
@@ -189,7 +190,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 398);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 388);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
             // Form1
@@ -233,6 +234,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 
