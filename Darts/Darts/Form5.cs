@@ -117,73 +117,7 @@ namespace Darts
 
             return perm.Values;
         }
-        
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (n == 0) 
-                randomPermutation(1, 8);         
-            
-            random = numbers[arr_count];
-            if (random == 1)
-            {
-                label10.Text = textBox1.Text;
-            }
-            else if (random == 2)
-            {
-                label11.Text = textBox1.Text;
-            }
-            else if (random == 3)
-            {
-                label12.Text = textBox1.Text;
-            }
-            else
-            if (random == 4)
-            {
-                label13.Text = textBox1.Text;              
-            }
-            if (random == 5)
-            {
-                label14.Text = textBox1.Text;
-            }
-            else if (random == 6)
-            {
-                label15.Text = textBox1.Text;
-            }
-            else
-            if (random == 7)
-            {
-                label16.Text = textBox1.Text;
-            }
-            else
-            if (random == 8)
-            {
-                label17.Text = textBox1.Text;
-            }
-            arr_count += 1;          
-            
-            isButtonClicked = true;
-            n++;
-            counter++;
-            
-
-
-            string sValue = textBox1.Text;
-
-            
-            textBox1.Text = textBox1.Text.Remove(textBox1.SelectionStart, textBox1.SelectionLength);
-
-
-            string[] arrValues = sValue.Split(new char[] { ' ' });
-            for (int i = 0; i < arrValues.Length; i++)
-            {
-                arrValues[i] = arrValues[i].ToString().Replace(arrValues[i].ToString(), "");
-            }
-            for (int o = 0; o < arrValues.Length; o++)
-            {
-                textBox1.Text = arrValues[o].ToString();
-            }
-        }
-
+      
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
@@ -224,12 +158,145 @@ namespace Darts
 
         }
 
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            this.Text = "Darts Pro 2016";
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            if (e.CloseReason == CloseReason.WindowsShutDown) return;
+
+            // Confirm user wants to close
+            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
+            {
+                case DialogResult.No:
+                    e.Cancel = true;
+                    break;
+                default:
+                    break;
+
+            }
+            Application.Exit();
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            if (n == 0)
+                randomPermutation(1, 8);
+
+            random = numbers[arr_count];
+            if (random == 1)
+            {
+                label10.Text = textBox1.Text;
+            }
+            else if (random == 2)
+            {
+                label11.Text = textBox1.Text;
+            }
+            else if (random == 3)
+            {
+                label12.Text = textBox1.Text;
+            }
+            else
+            if (random == 4)
+            {
+                label13.Text = textBox1.Text;
+            }
+            if (random == 5)
+            {
+                label14.Text = textBox1.Text;
+            }
+            else if (random == 6)
+            {
+                label15.Text = textBox1.Text;
+            }
+            else
+            if (random == 7)
+            {
+                label16.Text = textBox1.Text;
+            }
+            else
+            if (random == 8)
+            {
+                label17.Text = textBox1.Text;
+            }
+            arr_count += 1;
+
+            isButtonClicked = true;
+            n++;
+            counter++;
+
+
+
+            string sValue = textBox1.Text;
+
+
+            textBox1.Text = textBox1.Text.Remove(textBox1.SelectionStart, textBox1.SelectionLength);
+
+
+            string[] arrValues = sValue.Split(new char[] { ' ' });
+            for (int i = 0; i < arrValues.Length; i++)
+            {
+                arrValues[i] = arrValues[i].ToString().Replace(arrValues[i].ToString(), "");
+            }
+            for (int o = 0; o < arrValues.Length; o++)
+            {
+                textBox1.Text = arrValues[o].ToString();
+            }
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            if (label10.Text == "  ")
+            {
+                label10.Text = "-";
+            }
+            if (label11.Text == "  ")
+            {
+                label11.Text = "-";
+            }
+            if (label12.Text == "  ")
+            {
+                label12.Text = "-";
+            }
+            if (label13.Text == "  ")
+            {
+                label13.Text = "-";
+            }
+            if (label14.Text == "  ")
+            {
+                label14.Text = "-";
+            }
+            if (label15.Text == "  ")
+            {
+                label15.Text = "-";
+            }
+            if (label16.Text == "  ")
+            {
+                label16.Text = "-";
+            }
+            if (label17.Text == "  ")
+            {
+                label17.Text = "-";
+            }
+            count = 8;
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             isRefresh = true;
             if (isRefresh)
             {
-                if(label10.Text == "-" && label11.Text != "-")
+                if (label10.Text == "-" && label11.Text != "-")
                 {
                     label18.Text = label11.Text;
                     n2.Value = 3;
@@ -239,7 +306,7 @@ namespace Darts
                     label18.Text = label10.Text;
                     n1.Value = 3;
                 }
-                if(label11.Text == "-" && label10.Text == "-")
+                if (label11.Text == "-" && label10.Text == "-")
                 {
                     label18.Text = "-";
                     n1.Value = 3;
@@ -256,7 +323,7 @@ namespace Darts
                     label19.Text = label12.Text;
                     n3.Value = 3;
                 }
-                if(label12.Text == "-" && label13.Text == "-")
+                if (label12.Text == "-" && label13.Text == "-")
                 {
                     label19.Text = "-";
                     n4.Value = 3;
@@ -351,7 +418,8 @@ namespace Darts
                 {
                     MessageBox.Show("You give same numbers");
                     label18.Text = null;
-                }else
+                }
+                else
                 if (n1.Value == 3)
                 {
                     label18.Text = label10.Text;
@@ -369,7 +437,8 @@ namespace Darts
                 {
                     MessageBox.Show("You give same numbers");
                     label19.Text = null;
-                }else
+                }
+                else
                 if (n3.Value == 3)
                 {
                     label19.Text = label12.Text;
@@ -387,7 +456,8 @@ namespace Darts
                 {
                     MessageBox.Show("You give same numbers");
                     label20.Text = null;
-                }else
+                }
+                else
                 if (n6.Value == 3)
                 {
                     label20.Text = label14.Text;
@@ -405,7 +475,8 @@ namespace Darts
                 {
                     MessageBox.Show("You give same numbers");
                     label21.Text = null;
-                }else
+                }
+                else
                 if (n8.Value == 3)
                 {
                     label21.Text = label16.Text;
@@ -414,7 +485,7 @@ namespace Darts
                 {
                     label21.Text = label17.Text;
                 }
-                
+
                 else
                 {
                     label21.Text = null;
@@ -424,7 +495,8 @@ namespace Darts
                 {
                     MessageBox.Show("You give same numbers");
                     label22.Text = null;
-                }else
+                }
+                else
                 if (n9.Value == 3)
                 {
                     label22.Text = label18.Text;
@@ -438,12 +510,13 @@ namespace Darts
                     label22.Text = null;
                 }
 
-               if (n12.Value == 3 && n11.Value == 3)
+                if (n12.Value == 3 && n11.Value == 3)
                 {
                     MessageBox.Show("You give same numbers");
                     label23.Text = null;
-                }else
-                if (n11.Value == 3)
+                }
+                else
+                 if (n11.Value == 3)
                 {
                     label23.Text = label20.Text;
                 }
@@ -460,7 +533,8 @@ namespace Darts
                 {
                     MessageBox.Show("You give same numbers");
                     label24.Text = null;
-                }else
+                }
+                else
                 if (n13.Value == 3)
                 {
                     label24.Text = label22.Text;
@@ -474,70 +548,8 @@ namespace Darts
                     label24.Text = null;
                 }
             }
-            
+
             isRefresh = false;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if(label10.Text == "  ")
-            {
-                label10.Text = "-";
-            }
-            if (label11.Text == "  ")
-            {
-                label11.Text = "-";
-            }
-            if (label12.Text == "  ")
-            {
-                label12.Text = "-";
-            }
-            if (label13.Text == "  ")
-            {
-                label13.Text = "-";
-            }
-            if (label14.Text == "  ")
-            {
-                label14.Text = "-";
-            }
-            if (label15.Text == "  ")
-            {
-                label15.Text = "-";
-            }
-            if (label16.Text == "  ")
-            {
-                label16.Text = "-";
-            }
-            if (label17.Text == "  ")
-            {
-                label17.Text = "-";
-            }
-            count = 8;
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-
-            if (e.CloseReason == CloseReason.WindowsShutDown) return;
-
-            // Confirm user wants to close
-            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
-            {
-                case DialogResult.No:
-                    e.Cancel = true;
-                    break;
-                default:
-                    break;
-
-            }
-            Application.Exit();
-
         }
     }
 }
