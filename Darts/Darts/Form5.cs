@@ -20,6 +20,8 @@ namespace Darts
         private int i = 0;
         private int random;
         private int arr_count = 0;
+        private bool isRefresh = false;
+        private bool isButtonClicked = false;
         public SortedList<int, int> perm = new SortedList<int, int>();
         Random rand = new Random();
 
@@ -46,7 +48,7 @@ namespace Darts
         {
 
         }
-        private bool isRefresh = false;
+
         private void changeColor_Click(object sender, EventArgs e)
         {
             Random randomColor = new Random();
@@ -54,7 +56,7 @@ namespace Darts
                 randomColor.Next(0, 256), randomColor.Next(0, 256));
             this.label1.ForeColor = this.label2.ForeColor;
         }
-        private bool isButtonClicked = false;
+
         private void timer5_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
@@ -82,23 +84,11 @@ namespace Darts
 
         }
                 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (f3 == null)
-                f3 = new Form3();
-            f3.fo = label4.Text;
-            f3.Show();
-            n = 0;
-            i = 0;
-            arr_count = 0;
-            count = 0;
-            this.Hide();
-        }
-
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
             
         }
+
         public IList<int> randomPermutation(int min, int max)
         {
             Random rand = new Random();
@@ -186,9 +176,9 @@ namespace Darts
         private void label10_Click(object sender, EventArgs e)
         {
 
-        }
+        }   
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             if (n == 0)
                 randomPermutation(1, 8);
@@ -252,43 +242,6 @@ namespace Darts
             {
                 textBox1.Text = arrValues[o].ToString();
             }
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            if (label10.Text == "  ")
-            {
-                label10.Text = "-";
-            }
-            if (label11.Text == "  ")
-            {
-                label11.Text = "-";
-            }
-            if (label12.Text == "  ")
-            {
-                label12.Text = "-";
-            }
-            if (label13.Text == "  ")
-            {
-                label13.Text = "-";
-            }
-            if (label14.Text == "  ")
-            {
-                label14.Text = "-";
-            }
-            if (label15.Text == "  ")
-            {
-                label15.Text = "-";
-            }
-            if (label16.Text == "  ")
-            {
-                label16.Text = "-";
-            }
-            if (label17.Text == "  ")
-            {
-                label17.Text = "-";
-            }
-            count = 8;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -550,6 +503,56 @@ namespace Darts
             }
 
             isRefresh = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (label10.Text == "  ")
+            {
+                label10.Text = "-";
+            }
+            if (label11.Text == "  ")
+            {
+                label11.Text = "-";
+            }
+            if (label12.Text == "  ")
+            {
+                label12.Text = "-";
+            }
+            if (label13.Text == "  ")
+            {
+                label13.Text = "-";
+            }
+            if (label14.Text == "  ")
+            {
+                label14.Text = "-";
+            }
+            if (label15.Text == "  ")
+            {
+                label15.Text = "-";
+            }
+            if (label16.Text == "  ")
+            {
+                label16.Text = "-";
+            }
+            if (label17.Text == "  ")
+            {
+                label17.Text = "-";
+            }
+            count = 8;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (f3 == null)
+                f3 = new Form3();
+            f3.fo = label4.Text;
+            f3.Show();
+            n = 0;
+            i = 0;
+            arr_count = 0;
+            count = 0;
+            this.Hide();
         }
     }
 }

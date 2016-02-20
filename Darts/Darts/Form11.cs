@@ -13,7 +13,6 @@ namespace Darts
     public partial class Form11 : Form
     {
         private bool isButtonClicked = false;
-        Form3 f3;
         public static int count = 0; // can change because not const
         int[] numbers = new int[8];
         private int counter = 0;
@@ -21,19 +20,13 @@ namespace Darts
         private int i = 0;
         private int random;
         private int arr_count = 0;
+        private bool isRefresh = false;
         public SortedList<int, int> perm = new SortedList<int, int>();
         Random rand = new Random();
+
         public Form11()
         {
             InitializeComponent();
-        }
-
-        private void changeColor_Click(object sender, EventArgs e)
-        {
-            Random randomColor = new Random();
-            this.label2.ForeColor = Color.FromArgb(randomColor.Next(0, 256),
-                randomColor.Next(0, 256), randomColor.Next(0, 256));
-            this.label1.ForeColor = this.label2.ForeColor;
         }
 
         private void timer11_Tick(object sender, EventArgs e)
@@ -56,26 +49,16 @@ namespace Darts
                 button4.Enabled = false;
             }
         }
+
         public string fo
         {
             get { return label4.Text; }
             set { label4.Text = value; }
 
         }
-        Form4 f4;
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (f4 == null)
-                f4 = new Form4();
-            f4.fo = label4.Text;
-            f4.Show();
-            n = 0;
-            i = 0;
-            arr_count = 0;
-            count = 0;
-            this.Hide();
-        }
 
+        Form4 f4;
+       
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -104,73 +87,69 @@ namespace Darts
 
             return perm.Values;
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        
+        private void Form11_Load(object sender, EventArgs e)
         {
-            if (n == 0)
-                randomPermutation(1, 8);
 
-            random = numbers[arr_count];
-            if (random == 1)
-            {
-                label10.Text = textBox1.Text;
-            }
-            else if (random == 2)
-            {
-                label11.Text = textBox1.Text;
-            }
-            else if (random == 3)
-            {
-                label12.Text = textBox1.Text;
-            }
-            else
-            if (random == 4)
-            {
-                label13.Text = textBox1.Text;
-            }
-            if (random == 5)
-            {
-                label14.Text = textBox1.Text;
-            }
-            else if (random == 6)
-            {
-                label15.Text = textBox1.Text;
-            }
-            else
-            if (random == 7)
-            {
-                label16.Text = textBox1.Text;
-            }
-            else
-            if (random == 8)
-            {
-                label17.Text = textBox1.Text;
-            }
-            arr_count += 1;
-
-            isButtonClicked = true;
-            n++;
-            counter++;
-
-
-
-            string sValue = textBox1.Text;
-
-
-            textBox1.Text = textBox1.Text.Remove(textBox1.SelectionStart, textBox1.SelectionLength);
-
-
-            string[] arrValues = sValue.Split(new char[] { ' ' });
-            for (int i = 0; i < arrValues.Length; i++)
-            {
-                arrValues[i] = arrValues[i].ToString().Replace(arrValues[i].ToString(), "");
-            }
-            for (int o = 0; o < arrValues.Length; o++)
-            {
-                textBox1.Text = arrValues[o].ToString();
-            }
         }
-        private bool isRefresh = false;
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            if (e.CloseReason == CloseReason.WindowsShutDown) return;
+
+            // Confirm user wants to close
+            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
+            {
+                case DialogResult.No:
+                    e.Cancel = true;
+                    break;
+                default:
+                    break;
+
+            }
+            Application.Exit();
+
+        } // X- working properly
+      
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            if (label10.Text == "  ")
+            {
+                label10.Text = "-";
+            }
+            if (label11.Text == "  ")
+            {
+                label11.Text = "-";
+            }
+            if (label12.Text == "  ")
+            {
+                label12.Text = "-";
+            }
+            if (label13.Text == "  ")
+            {
+                label13.Text = "-";
+            }
+            if (label14.Text == "  ")
+            {
+                label14.Text = "-";
+            }
+            if (label15.Text == "  ")
+            {
+                label15.Text = "-";
+            }
+            if (label16.Text == "  ")
+            {
+                label16.Text = "-";
+            }
+            if (label17.Text == "  ")
+            {
+                label17.Text = "-";
+            }
+            count = 8;
+        } // Button Ready
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -196,12 +175,12 @@ namespace Darts
 
                 if (label12.Text == "-" && label13.Text != "-")
                 {
-                    label19.Text = label12.Text;
+                    label19.Text = label13.Text;
                     n4.Value = 3;
                 }
                 if (label13.Text == "-" && label12.Text != "-")
                 {
-                    label19.Text = label13.Text;
+                    label19.Text = label12.Text;
                     n3.Value = 3;
                 }
                 if (label12.Text == "-" && label13.Text == "-")
@@ -431,7 +410,7 @@ namespace Darts
             }
 
             isRefresh = false;
-        }
+        } // Button Refresh
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -497,68 +476,27 @@ namespace Darts
             {
                 textBox1.Text = arrValues[o].ToString();
             }
-        }
+        } // Button add player
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            if (label10.Text == "  ")
-            {
-                label10.Text = "-";
-            }
-            if (label11.Text == "  ")
-            {
-                label11.Text = "-";
-            }
-            if (label12.Text == "  ")
-            {
-                label12.Text = "-";
-            }
-            if (label13.Text == "  ")
-            {
-                label13.Text = "-";
-            }
-            if (label14.Text == "  ")
-            {
-                label14.Text = "-";
-            }
-            if (label15.Text == "  ")
-            {
-                label15.Text = "-";
-            }
-            if (label16.Text == "  ")
-            {
-                label16.Text = "-";
-            }
-            if (label17.Text == "  ")
-            {
-                label17.Text = "-";
-            }
-            count = 8;
-        }
+            if (f4 == null)
+                f4 = new Form4();
+            f4.fo = label4.Text;
+            f4.Show();
+            n = 0;
+            i = 0;
+            arr_count = 0;
+            count = 0;
+            this.Hide();
+        } // Button back
 
-        private void Form11_Load(object sender, EventArgs e)
+        private void changeColor_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-
-            if (e.CloseReason == CloseReason.WindowsShutDown) return;
-
-            // Confirm user wants to close
-            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
-            {
-                case DialogResult.No:
-                    e.Cancel = true;
-                    break;
-                default:
-                    break;
-
-            }
-            Application.Exit();
-
+            Random randomColor = new Random();
+            this.label2.ForeColor = Color.FromArgb(randomColor.Next(0, 256),
+                randomColor.Next(0, 256), randomColor.Next(0, 256));
+            this.label1.ForeColor = this.label2.ForeColor;
         }
     }
 }
