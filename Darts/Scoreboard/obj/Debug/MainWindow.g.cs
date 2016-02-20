@@ -48,14 +48,6 @@ namespace Scoreboard {
         #line default
         #line hidden
         
-        
-        #line 13 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button button;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -88,15 +80,6 @@ namespace Scoreboard {
             {
             case 1:
             this.mainGrid = ((System.Windows.Controls.Grid)(target));
-            return;
-            case 2:
-            this.button = ((System.Windows.Controls.Button)(target));
-            
-            #line 13 "..\..\MainWindow.xaml"
-            this.button.Click += new System.Windows.RoutedEventHandler(this.button_Click);
-            
-            #line default
-            #line hidden
             return;
             }
             this._contentLoaded = true;

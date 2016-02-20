@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Scoreboard"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
-    <Grid Name="mainGrid" MouseUp="mainGrid_MouseUp" Background="LightBlue">
-        
+    <Grid Name="mainGrid" Background="LightBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
     </Grid>
 </Window>

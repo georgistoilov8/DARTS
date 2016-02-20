@@ -1,0 +1,16 @@
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\MainWindow.g.cs
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Giving_Name_Tournament.g.cs
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\App.g.cs
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard_MarkupCompile.cache
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard_MarkupCompile.lref
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\bin\Debug\Scoreboard.exe.config
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.csprojResolveAssemblyReference.cache
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\bin\Debug\Scoreboard.exe
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\bin\Debug\Scoreboard.pdb
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\MainWindow.baml
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Giving_Name_Tournament.baml
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.g.resources
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.Properties.Resources.resources
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.csproj.GenerateResource.Cache
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.exe
+C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.pdb

@@ -22,6 +22,10 @@ namespace Scoreboard
         {
             InitializeComponent();
         }
-        
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
