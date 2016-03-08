@@ -207,7 +207,7 @@
             this.MaximumSize = new System.Drawing.Size(1600, 900);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Darts Pro 2016";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();

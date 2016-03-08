@@ -49,14 +49,6 @@ namespace Darts
 
         }
 
-        private void changeColor_Click(object sender, EventArgs e)
-        {
-            Random randomColor = new Random();
-            this.label2.ForeColor = Color.FromArgb(randomColor.Next(0, 256),
-                randomColor.Next(0, 256), randomColor.Next(0, 256));
-            this.label1.ForeColor = this.label2.ForeColor;
-        }
-
         private void timer5_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
@@ -159,16 +151,6 @@ namespace Darts
 
             if (e.CloseReason == CloseReason.WindowsShutDown) return;
 
-            // Confirm user wants to close
-            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
-            {
-                case DialogResult.No:
-                    e.Cancel = true;
-                    break;
-                default:
-                    break;
-
-            }
             Application.Exit();
 
         }
@@ -553,6 +535,14 @@ namespace Darts
             arr_count = 0;
             count = 0;
             this.Hide();
+        }
+
+        private void changeColor_Click_1(object sender, EventArgs e)
+        {
+            Random randomColor = new Random();
+            this.label2.ForeColor = Color.FromArgb(randomColor.Next(0, 256),
+                randomColor.Next(0, 256), randomColor.Next(0, 256));
+            this.label1.ForeColor = this.label2.ForeColor;
         }
     }
 }

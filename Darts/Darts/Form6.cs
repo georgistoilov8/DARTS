@@ -57,32 +57,19 @@ namespace Darts
             {
                 button4.Enabled = false;
             }
-        }
-
-        private void changeColor_Click(object sender, EventArgs e)
-        {
-            Random randomColor = new Random();
-            this.label1.ForeColor = Color.FromArgb(randomColor.Next(0, 256),
-                randomColor.Next(0, 256), randomColor.Next(0, 256));
-            this.label2.ForeColor = this.label1.ForeColor;
+            if (n29.Value == 3 || n30.Value == 3)
+            {
+                button2.Enabled = true;
+            }
+            else
+            {
+                button2.Enabled = false;
+            }
         }
 
         private void label123_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (f3 == null)
-                f3 = new Form3();
-            f3.fo = label4.Text;
-            f3.Show();
-            n = 0;
-            i = 0;
-            arr_count = 0;
-            count = 0;
-            this.Hide();
         }
 
         private void textBox31_TextChanged(object sender, EventArgs e)
@@ -105,187 +92,28 @@ namespace Darts
             return perm.Values;
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (n == 0)
-                randomPermutation(1, 16);
-
-            random = numbers[arr_count];
-            if (random == 1)
-            {
-                label10.Text = textBox1.Text;
-            }
-            else 
-            if (random == 2)
-            {
-                label11.Text = textBox1.Text;
-            }
-            else 
-            if (random == 3)
-            {
-                label12.Text = textBox1.Text;
-            }
-            else
-            if (random == 4)
-            {
-                label13.Text = textBox1.Text;
-            }else 
-            if (random == 5)
-            {
-                label14.Text = textBox1.Text;
-            }
-            else 
-            if (random == 6)
-            {
-                label15.Text = textBox1.Text;
-            }
-            else
-            if (random == 7)
-            {
-                label16.Text = textBox1.Text;
-            }
-            else
-            if (random == 8)
-            {
-                label17.Text = textBox1.Text;
-            }
-            if (random == 9)
-            {
-                label25.Text = textBox1.Text;
-            }
-            else
-            if (random == 10)
-            {
-                label26.Text = textBox1.Text;
-            }
-            else 
-            if (random == 11)
-            {
-                label27.Text = textBox1.Text;
-            }
-            else
-            if (random == 12)
-            {
-                label28.Text = textBox1.Text;
-            }else
-            if (random == 13)
-            {
-                label29.Text = textBox1.Text;
-            }
-            else if (random == 14)
-            {
-                label30.Text = textBox1.Text;
-            }
-            else
-            if (random == 15)
-            {
-                label31.Text = textBox1.Text;
-            }
-            else
-            if (random == 16)
-            {
-                label32.Text = textBox1.Text;
-            }
-            arr_count += 1;
-            isButtonClicked = true;
-            n++;
-            counter++;
-
-
-
-            string sValue = textBox1.Text;
-
-
-            textBox1.Text = textBox1.Text.Remove(textBox1.SelectionStart, textBox1.SelectionLength);
-
-
-            string[] arrValues = sValue.Split(new char[] { ' ' });
-            for (int i = 0; i < arrValues.Length; i++)
-            {
-                arrValues[i] = arrValues[i].ToString().Replace(arrValues[i].ToString(), "");
-            }
-            for (int o = 0; o < arrValues.Length; o++)
-            {
-                textBox1.Text = arrValues[o].ToString();
-            }
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (label10.Text == "  ")
-            {
-                label10.Text = "-";
-            }
-            if (label11.Text == "  ")
-            {
-                label11.Text = "-";
-            }
-            if (label12.Text == "  ")
-            {
-                label12.Text = "-";
-            }
-            if (label13.Text == "  ")
-            {
-                label13.Text = "-";
-            }
-            if (label14.Text == "  ")
-            {
-                label14.Text = "-";
-            }
-            if (label15.Text == "  ")
-            {
-                label15.Text = "-";
-            }
-            if (label16.Text == "  ")
-            {
-                label16.Text = "-";
-            }
-            if (label17.Text == "  ")
-            {
-                label17.Text = "-";
-            }
-            if (label25.Text == "  ")
-            {
-                label25.Text = "-";
-            }
-            if (label26.Text == "  ")
-            {
-                label26.Text = "-";
-            }
-            if (label27.Text == "  ")
-            {
-                label27.Text = "-";
-            }
-            if (label28.Text == "  ")
-            {
-                label28.Text = "-";
-            }
-            if (label29.Text == "  ")
-            {
-                label29.Text = "-";
-            }
-            if (label30.Text == "  ")
-            {
-                label30.Text = "-";
-            }
-            if (label31.Text == "  ")
-            {
-                label31.Text = "-";
-            }
-            if (label32.Text == "  ")
-            {
-                label32.Text = "-";
-            }
-            count = 16;
-        }
-
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
 
         }
         private bool isRefresh = false;
-        private void button3_Click(object sender, EventArgs e)
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            if (e.CloseReason == CloseReason.WindowsShutDown) return;
+
+            Application.Exit();
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             isRefresh = true;
             if (isRefresh)
@@ -799,29 +627,201 @@ namespace Darts
             isRefresh = false;
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
+            if (n == 0)
+                randomPermutation(1, 16);
 
+            random = numbers[arr_count];
+            if (random == 1)
+            {
+                label10.Text = textBox1.Text;
+            }
+            else
+            if (random == 2)
+            {
+                label11.Text = textBox1.Text;
+            }
+            else
+            if (random == 3)
+            {
+                label12.Text = textBox1.Text;
+            }
+            else
+            if (random == 4)
+            {
+                label13.Text = textBox1.Text;
+            }
+            else
+            if (random == 5)
+            {
+                label14.Text = textBox1.Text;
+            }
+            else
+            if (random == 6)
+            {
+                label15.Text = textBox1.Text;
+            }
+            else
+            if (random == 7)
+            {
+                label16.Text = textBox1.Text;
+            }
+            else
+            if (random == 8)
+            {
+                label17.Text = textBox1.Text;
+            }
+            if (random == 9)
+            {
+                label25.Text = textBox1.Text;
+            }
+            else
+            if (random == 10)
+            {
+                label26.Text = textBox1.Text;
+            }
+            else
+            if (random == 11)
+            {
+                label27.Text = textBox1.Text;
+            }
+            else
+            if (random == 12)
+            {
+                label28.Text = textBox1.Text;
+            }
+            else
+            if (random == 13)
+            {
+                label29.Text = textBox1.Text;
+            }
+            else if (random == 14)
+            {
+                label30.Text = textBox1.Text;
+            }
+            else
+            if (random == 15)
+            {
+                label31.Text = textBox1.Text;
+            }
+            else
+            if (random == 16)
+            {
+                label32.Text = textBox1.Text;
+            }
+            arr_count += 1;
+            isButtonClicked = true;
+            n++;
+            counter++;
+
+
+
+            string sValue = textBox1.Text;
+
+
+            textBox1.Text = textBox1.Text.Remove(textBox1.SelectionStart, textBox1.SelectionLength);
+
+
+            string[] arrValues = sValue.Split(new char[] { ' ' });
+            for (int i = 0; i < arrValues.Length; i++)
+            {
+                arrValues[i] = arrValues[i].ToString().Replace(arrValues[i].ToString(), "");
+            }
+            for (int o = 0; o < arrValues.Length; o++)
+            {
+                textBox1.Text = arrValues[o].ToString();
+            }
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            base.OnFormClosing(e);
-
-            if (e.CloseReason == CloseReason.WindowsShutDown) return;
-
-            // Confirm user wants to close
-            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
+            if (label10.Text == "  ")
             {
-                case DialogResult.No:
-                    e.Cancel = true;
-                    break;
-                default:
-                    break;
-
+                label10.Text = "-";
             }
-            Application.Exit();
+            if (label11.Text == "  ")
+            {
+                label11.Text = "-";
+            }
+            if (label12.Text == "  ")
+            {
+                label12.Text = "-";
+            }
+            if (label13.Text == "  ")
+            {
+                label13.Text = "-";
+            }
+            if (label14.Text == "  ")
+            {
+                label14.Text = "-";
+            }
+            if (label15.Text == "  ")
+            {
+                label15.Text = "-";
+            }
+            if (label16.Text == "  ")
+            {
+                label16.Text = "-";
+            }
+            if (label17.Text == "  ")
+            {
+                label17.Text = "-";
+            }
+            if (label25.Text == "  ")
+            {
+                label25.Text = "-";
+            }
+            if (label26.Text == "  ")
+            {
+                label26.Text = "-";
+            }
+            if (label27.Text == "  ")
+            {
+                label27.Text = "-";
+            }
+            if (label28.Text == "  ")
+            {
+                label28.Text = "-";
+            }
+            if (label29.Text == "  ")
+            {
+                label29.Text = "-";
+            }
+            if (label30.Text == "  ")
+            {
+                label30.Text = "-";
+            }
+            if (label31.Text == "  ")
+            {
+                label31.Text = "-";
+            }
+            if (label32.Text == "  ")
+            {
+                label32.Text = "-";
+            }
+            count = 16;
+        }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (f3 == null)
+                f3 = new Form3();
+            f3.fo = label4.Text;
+            f3.Show();
+            n = 0;
+            i = 0;
+            arr_count = 0;
+            count = 0;
+            this.Hide();
+        }
+
+        private void changeColor_Click_1(object sender, EventArgs e)
+        {
+            Random randomColor = new Random();
+            this.label1.ForeColor = Color.FromArgb(randomColor.Next(0, 256),
+                randomColor.Next(0, 256), randomColor.Next(0, 256));
+            this.label2.ForeColor = this.label1.ForeColor;
         }
     }
 }

@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+<<<<<<< HEAD:Darts/Scoreboard/StartWindow.xaml
+﻿<Window x:Class="Scoreboard.MainWindow"
+=======
+<Window x:Class="Scoreboard.MainWindow"
+>>>>>>> origin/master
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scoreboard"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Background="LightGray">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Style="{StaticResource Golden}" Click="Button_Click">Нова Игра</Button>
+            <Button Style="{StaticResource Golden}">Нов Турнир</Button>
+            <Button Style="{StaticResource Golden}">Ранглиста</Button>
+        </StackPanel>
+    </Grid>
+</Window>
+<<<<<<< HEAD
+=======
+﻿<Window x:Class="Scoreboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scoreboard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Name="mainGrid" Background="LightBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+    </Grid>
+</Window>
+>>>>>>> origin/master:Darts/Scoreboard/MainWindow.xaml
+=======
+>>>>>>> origin/master

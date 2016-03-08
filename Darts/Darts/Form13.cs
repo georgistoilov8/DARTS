@@ -70,19 +70,7 @@ namespace Darts
             this.Hide();
         }
         Form4 f4;
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (f4 == null)
-                f4 = new Form4();
-            f4.fo = label4.Text;
-            f4.Show();
-            n = 0;
-            i = 0;
-            arr_count = 0;
-            count = 0;
-            this.Hide();
-        }
-
+        
         public IList<int> randomPermutation(int min, int max)
         {
             Random rand = new Random();
@@ -99,7 +87,1039 @@ namespace Darts
             return perm.Values;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        
+
+        private void textBox39_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form13_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            if (e.CloseReason == CloseReason.WindowsShutDown) return;
+
+            Application.Exit();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (label10.Text == "  ")
+            {
+                label10.Text = "-";
+            }
+            if (label11.Text == "  ")
+            {
+                label11.Text = "-";
+            }
+            if (label12.Text == "  ")
+            {
+                label12.Text = "-";
+            }
+            if (label13.Text == "  ")
+            {
+                label13.Text = "-";
+            }
+            if (label14.Text == "  ")
+            {
+                label14.Text = "-";
+            }
+            if (label15.Text == "  ")
+            {
+                label15.Text = "-";
+            }
+            if (label16.Text == "  ")
+            {
+                label16.Text = "-";
+            }
+            if (label17.Text == "  ")
+            {
+                label17.Text = "-";
+            }
+            if (label25.Text == "  ")
+            {
+                label25.Text = "-";
+            }
+            if (label18.Text == "  ")
+            {
+                label18.Text = "-";
+            }
+            if (label19.Text == "  ")
+            {
+                label19.Text = "-";
+            }
+            if (label20.Text == "  ")
+            {
+                label20.Text = "-";
+            }
+            if (label21.Text == "  ")
+            {
+                label21.Text = "-";
+            }
+            if (label22.Text == "  ")
+            {
+                label22.Text = "-";
+            }
+            if (label23.Text == "  ")
+            {
+                label23.Text = "-";
+            }
+            if (label24.Text == "  ")
+            {
+                label24.Text = "-";
+            }
+            if (label38.Text == "  ")
+            {
+                label38.Text = "-";
+            }
+            if (label39.Text == "  ")
+            {
+                label39.Text = "-";
+            }
+            if (label40.Text == "  ")
+            {
+                label40.Text = "-";
+            }
+            if (label41.Text == "  ")
+            {
+                label41.Text = "-";
+            }
+            if (label42.Text == "  ")
+            {
+                label42.Text = "-";
+            }
+            if (label43.Text == "  ")
+            {
+                label43.Text = "-";
+            }
+            if (label44.Text == "  ")
+            {
+                label44.Text = "-";
+            }
+            if (label45.Text == "  ")
+            {
+                label45.Text = "-";
+            }
+            if (label46.Text == "  ")
+            {
+                label46.Text = "-";
+            }
+            if (label47.Text == "  ")
+            {
+                label47.Text = "-";
+            }
+            if (label48.Text == "  ")
+            {
+                label48.Text = "-";
+            }
+            if (label49.Text == "  ")
+            {
+                label49.Text = "-";
+            }
+            if (label50.Text == "  ")
+            {
+                label50.Text = "-";
+            }
+            if (label51.Text == "  ")
+            {
+                label51.Text = "-";
+            }
+            if (label52.Text == "  ")
+            {
+                label52.Text = "-";
+            }
+            if (label53.Text == "  ")
+            {
+                label53.Text = "-";
+            }
+            count = 32;
+        }
+        private bool isRefresh = false;
+        private void button5_Click(object sender, EventArgs e)
+        {
+            isRefresh = true;
+            if (isRefresh)
+            {
+                if (label10.Text == "-" && label11.Text != "-")
+                {
+                    label26.Text = label11.Text;
+                    n2.Value = 3;
+                }
+                if (label11.Text == "-" && label10.Text != "-")
+                {
+                    label26.Text = label10.Text;
+                    n1.Value = 3;
+                }
+                if (label11.Text == "-" && label10.Text == "-")
+                {
+                    label26.Text = "-";
+                    n1.Value = 3;
+                }
+
+
+                if (label12.Text == "-" && label13.Text != "-")
+                {
+                    label27.Text = label13.Text;
+                    n3.Value = 3;
+                }
+                if (label13.Text == "-" && label12.Text != "-")
+                {
+                    label27.Text = label12.Text;
+                    n4.Value = 3;
+                }
+                if (label12.Text == "-" && label13.Text == "-")
+                {
+                    label27.Text = "-";
+                    n3.Value = 3;
+                }
+
+
+                if (label14.Text == "-" && label15.Text != "-")
+                {
+                    label28.Text = label15.Text;
+                    n5.Value = 3;
+                }
+                else if (label15.Text == "-" && label14.Text != "-")
+                {
+                    label28.Text = label14.Text;
+                    n6.Value = 3;
+                }
+                else if (label15.Text == "-" && label14.Text == "-")
+                {
+                    label28.Text = "-";
+                    n6.Value = 3;
+                }
+
+
+                if (label16.Text == "-" && label17.Text != "-")
+                {
+                    label29.Text = label17.Text;
+                    n7.Value = 3;
+                }
+                else if (label17.Text == "-" && label16.Text != "-")
+                {
+                    label29.Text = label16.Text;
+                    n8.Value = 3;
+                }
+                else if (label17.Text == "-" && label16.Text == "-")
+                {
+                    label29.Text = "-";
+                    n8.Value = 3;
+                }
+
+
+                if (label18.Text == "-" && label19.Text != "-")
+                {
+                    label30.Text = label19.Text;
+                    n10.Value = 3;
+                }
+                else if (label19.Text == "-" && label18.Text != "-")
+                {
+                    label30.Text = label18.Text;
+                    n9.Value = 3;
+                }
+                else if (label19.Text == "-" && label18.Text == "-")
+                {
+                    label30.Text = "-";
+                    n9.Value = 3;
+                }
+
+
+                if (label20.Text == "-" && label21.Text != "-")
+                {
+                    label31.Text = label21.Text;
+                    n12.Value = 3;
+                }
+                else if (label21.Text == "-" && label20.Text != "-")
+                {
+                    label31.Text = label20.Text;
+                    n11.Value = 3;
+                }
+                else if (label20.Text == "-" && label21.Text == "-")
+                {
+                    label31.Text = "-";
+                    n11.Value = 3;
+                }
+
+
+                if (label22.Text == "-" && label23.Text != "-")
+                {
+                    label32.Text = label23.Text;
+                    n14.Value = 3;
+                }
+                else if (label23.Text == "-" && label22.Text != "-")
+                {
+                    label32.Text = label22.Text;
+                    n13.Value = 3;
+                }
+                else if (label23.Text == "-" && label22.Text == "-")
+                {
+                    label32.Text = "-";
+                    n13.Value = 3;
+                }
+
+                if (label24.Text == "-" && label25.Text != "-")
+                {
+                    label33.Text = label25.Text;
+                    n16.Value = 3;
+                }
+                if (label25.Text == "-" && label24.Text != "-")
+                {
+                    label33.Text = label24.Text;
+                    n15.Value = 3;
+                }
+                if (label25.Text == "-" && label24.Text == "-")
+                {
+                    label33.Text = "-";
+                    n15.Value = 3;
+                }
+
+
+                if (label27.Text == "-" && label26.Text != "-")
+                {
+                    label34.Text = label26.Text;
+                    n18.Value = 3;
+                }
+                if (label26.Text == "-" && label27.Text != "-")
+                {
+                    label34.Text = label27.Text;
+                    n17.Value = 3;
+                }
+                if (label26.Text == "-" && label27.Text == "-")
+                {
+                    label34.Text = "-";
+                    n17.Value = 3;
+                }
+
+
+                if (label29.Text == "-" && label28.Text != "-")
+                {
+                    label35.Text = label28.Text;
+                    n20.Value = 3;
+                }
+                else if (label28.Text == "-" && label29.Text != "-")
+                {
+                    label35.Text = label29.Text;
+                    n19.Value = 3;
+                }
+                else if (label29.Text == "-" && label28.Text == "-")
+                {
+                    label35.Text = "-";
+                    n19.Value = 3;
+                }
+
+
+                if (label31.Text == "-" && label30.Text != "-")
+                {
+                    label36.Text = label30.Text;
+                    n22.Value = 3;
+                }
+                else if (label30.Text == "-" && label31.Text != "-")
+                {
+                    label36.Text = label31.Text;
+                    n21.Value = 3;
+                }
+                else if (label31.Text == "-" && label30.Text == "-")
+                {
+                    label36.Text = "-";
+                    n21.Value = 3;
+                }
+
+                if (label33.Text == "-" && label32.Text != "-")
+                {
+                    label37.Text = label32.Text;
+                    n23.Value = 3;
+                }
+                else if (label32.Text == "-" && label33.Text != "-")
+                {
+                    label37.Text = label33.Text;
+                    n24.Value = 3;
+                }
+                else if (label33.Text == "-" && label32.Text == "-")
+                {
+                    label37.Text = "-";
+                    n24.Value = 3;
+                }
+
+                //............................................................................................................
+                // Start from here
+
+                if (n1.Value == 3 && n2.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label26.Text = null;
+                }
+                else
+                if (n1.Value == 3)
+                {
+                    label26.Text = label10.Text;
+                }
+                else if (n2.Value == 3)
+                {
+                    label26.Text = label11.Text;
+                }
+                else
+                {
+                    label26.Text = null;
+                }
+
+                if (n3.Value == 3 && n4.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label27.Text = null;
+                }
+                else
+                if (n4.Value == 3)
+                {
+                    label27.Text = label12.Text;
+                }
+                else if (n3.Value == 3)
+                {
+                    label27.Text = label13.Text;
+                }
+                else
+                {
+                    label27.Text = null;
+                }
+
+                if (n5.Value == 3 && n6.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label28.Text = null;
+                }
+                else
+                if (n6.Value == 3)
+                {
+                    label28.Text = label14.Text;
+                }
+                else if (n5.Value == 3)
+                {
+                    label28.Text = label15.Text;
+                }
+                else
+                {
+                    label28.Text = null;
+                }
+
+                if (n7.Value == 3 && n8.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label29.Text = null;
+                }
+                else
+                if (n8.Value == 3)
+                {
+                    label29.Text = label16.Text;
+                }
+                else if (n7.Value == 3)
+                {
+                    label29.Text = label17.Text;
+                }
+
+                else
+                {
+                    label29.Text = null;
+                }
+
+                if (n10.Value == 3 && n9.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label30.Text = null;
+                }
+                else
+                if (n9.Value == 3)
+                {
+                    label30.Text = label18.Text;
+                }
+                else if (n10.Value == 3)
+                {
+                    label30.Text = label19.Text;
+                }
+                else
+                {
+                    label30.Text = null;
+                }
+
+                if (n12.Value == 3 && n11.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label31.Text = null;
+                }
+                else
+                 if (n11.Value == 3)
+                {
+                    label31.Text = label20.Text;
+                }
+                else if (n12.Value == 3)
+                {
+                    label31.Text = label21.Text;
+                }
+                else
+                {
+                    label31.Text = null;
+                }
+
+                if (n14.Value == 3 && n13.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label32.Text = null;
+                }
+                else
+                if (n13.Value == 3)
+                {
+                    label32.Text = label22.Text;
+                }
+                else if (n14.Value == 3)
+                {
+                    label32.Text = label23.Text;
+                }
+                else
+                {
+                    label32.Text = null;
+                }
+
+                if (n16.Value == 3 && n15.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label33.Text = null;
+                }
+                else
+                if (n15.Value == 3)
+                {
+                    label33.Text = label24.Text;
+                }
+                else if (n16.Value == 3)
+                {
+                    label33.Text = label25.Text;
+                }
+                else
+                {
+                    label33.Text = null;
+                }
+
+                if (n18.Value == 3 && n17.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label34.Text = null;
+                }
+                else
+                if (n17.Value == 3)
+                {
+                    label34.Text = label26.Text;
+                }
+                else if (n18.Value == 3)
+                {
+                    label34.Text = label27.Text;
+                }
+                else
+                {
+                    label34.Text = null;
+                }
+
+                if (n20.Value == 3 && n19.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label35.Text = null;
+                }
+                else
+                if (n19.Value == 3)
+                {
+                    label35.Text = label28.Text;
+                }
+                else if (n20.Value == 3)
+                {
+                    label35.Text = label29.Text;
+                }
+                else
+                {
+                    label35.Text = null;
+                }
+
+                if (n22.Value == 3 && n21.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label36.Text = null;
+                }
+                else
+                if (n21.Value == 3)
+                {
+                    label36.Text = label30.Text;
+                }
+                else if (n22.Value == 3)
+                {
+                    label36.Text = label31.Text;
+                }
+                else
+                {
+                    label36.Text = null;
+                }
+
+                if (n24.Value == 3 && n23.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label37.Text = null;
+                }
+                else
+                if (n23.Value == 3)
+                {
+                    label37.Text = label32.Text;
+                }
+                else if (n24.Value == 3)
+                {
+                    label37.Text = label33.Text;
+                }
+                else
+                {
+                    label37.Text = null;
+                }
+
+                //Right Side
+
+                if (label38.Text == "-" && label39.Text != "-")
+                {
+                    label54.Text = label39.Text;
+                    n30.Value = 3;
+                }
+                if (label39.Text == "-" && label38.Text != "-")
+                {
+                    label54.Text = label38.Text;
+                    n29.Value = 3;
+                }
+                if (label39.Text == "-" && label38.Text == "-")
+                {
+                    label54.Text = "-";
+                    n29.Value = 3;
+                }
+
+
+                if (label40.Text == "-" && label41.Text != "-")
+                {
+                    label55.Text = label41.Text;
+                    n32.Value = 3;
+                }
+                if (label41.Text == "-" && label40.Text != "-")
+                {
+                    label55.Text = label40.Text;
+                    n31.Value = 3;
+                }
+                if (label40.Text == "-" && label41.Text == "-")
+                {
+                    label55.Text = "-";
+                    n31.Value = 3;
+                }
+
+
+                if (label42.Text == "-" && label43.Text != "-")
+                {
+                    label56.Text = label43.Text;
+                    n34.Value = 3;
+                }
+                else if (label43.Text == "-" && label42.Text != "-")
+                {
+                    label56.Text = label42.Text;
+                    n33.Value = 3;
+                }
+                else if (label43.Text == "-" && label42.Text == "-")
+                {
+                    label56.Text = "-";
+                    n33.Value = 3;
+                }
+
+
+                if (label44.Text == "-" && label45.Text != "-")
+                {
+                    label57.Text = label45.Text;
+                    n36.Value = 3;
+                }
+                else if (label45.Text == "-" && label44.Text != "-")
+                {
+                    label57.Text = label44.Text;
+                    n35.Value = 3;
+                }
+                else if (label44.Text == "-" && label45.Text == "-")
+                {
+                    label57.Text = "-";
+                    n35.Value = 3;
+                }
+
+
+                if (label46.Text == "-" && label47.Text != "-")
+                {
+                    label58.Text = label47.Text;
+                    n38.Value = 3;
+                }
+                else if (label47.Text == "-" && label46.Text != "-")
+                {
+                    label58.Text = label46.Text;
+                    n37.Value = 3;
+                }
+                else if (label47.Text == "-" && label46.Text == "-")
+                {
+                    label58.Text = "-";
+                    n37.Value = 3;
+                }
+
+
+                if (label48.Text == "-" && label49.Text != "-")
+                {
+                    label59.Text = label49.Text;
+                    n40.Value = 3;
+                }
+                else if (label49.Text == "-" && label48.Text != "-")
+                {
+                    label59.Text = label48.Text;
+                    n39.Value = 3;
+                }
+                else if (label49.Text == "-" && label48.Text == "-")
+                {
+                    label59.Text = "-";
+                    n39.Value = 3;
+                }
+
+
+                if (label50.Text == "-" && label51.Text != "-")
+                {
+                    label60.Text = label51.Text;
+                    n42.Value = 3;
+                }
+                else if (label51.Text == "-" && label50.Text != "-")
+                {
+                    label60.Text = label50.Text;
+                    n41.Value = 3;
+                }
+                else if (label51.Text == "-" && label50.Text == "-")
+                {
+                    label60.Text = "-";
+                    n41.Value = 3;
+                }
+
+                if (label52.Text == "-" && label53.Text != "-")
+                {
+                    label61.Text = label53.Text;
+                    n44.Value = 3;
+                }
+                if (label53.Text == "-" && label52.Text != "-")
+                {
+                    label61.Text = label52.Text;
+                    n43.Value = 3;
+                }
+                if (label53.Text == "-" && label52.Text == "-")
+                {
+                    label61.Text = "-";
+                    n43.Value = 3;
+                }
+
+
+                if (label54.Text == "-" && label55.Text != "-")
+                {
+                    label62.Text = label55.Text;
+                    n46.Value = 3;
+                }
+                if (label55.Text == "-" && label54.Text != "-")
+                {
+                    label62.Text = label54.Text;
+                    n45.Value = 3;
+                }
+                if (label55.Text == "-" && label54.Text == "-")
+                {
+                    label62.Text = "-";
+                    n45.Value = 3;
+                }
+
+
+                if (label56.Text == "-" && label57.Text != "-")
+                {
+                    label63.Text = label57.Text;
+                    n48.Value = 3;
+                }
+                else if (label57.Text == "-" && label56.Text != "-")
+                {
+                    label63.Text = label56.Text;
+                    n47.Value = 3;
+                }
+                else if (label57.Text == "-" && label56.Text == "-")
+                {
+                    label63.Text = "-";
+                    n47.Value = 3;
+                }
+
+
+                if (label58.Text == "-" && label59.Text != "-")
+                {
+                    label64.Text = label59.Text;
+                    n50.Value = 3;
+                }
+                else if (label59.Text == "-" && label58.Text != "-")
+                {
+                    label64.Text = label58.Text;
+                    n49.Value = 3;
+                }
+                else if (label59.Text == "-" && label58.Text == "-")
+                {
+                    label64.Text = "-";
+                    n49.Value = 3;
+                }
+
+                if (label60.Text == "-" && label61.Text != "-")
+                {
+                    label65.Text = label61.Text;
+                    n52.Value = 3;
+                }
+                else if (label61.Text == "-" && label60.Text != "-")
+                {
+                    label65.Text = label60.Text;
+                    n51.Value = 3;
+                }
+                else if (label61.Text == "-" && label60.Text == "-")
+                {
+                    label64.Text = "-";
+                    n51.Value = 3;
+                }
+
+                //............................................................................................................
+                // Start from here
+
+                if (n29.Value == 3 && n30.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label54.Text = null;
+                }
+                else
+                if (n29.Value == 3)
+                {
+                    label54.Text = label38.Text;
+                }
+                else if (n30.Value == 3)
+                {
+                    label54.Text = label39.Text;
+                }
+                else
+                {
+                    label54.Text = null;
+                }
+
+                if (n31.Value == 3 && n32.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label55.Text = null;
+                }
+                else
+                if (n31.Value == 3)
+                {
+                    label55.Text = label40.Text;
+                }
+                else if (n32.Value == 3)
+                {
+                    label55.Text = label41.Text;
+                }
+                else
+                {
+                    label55.Text = null;
+                }
+
+                if (n33.Value == 3 && n34.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label56.Text = null;
+                }
+                else
+                if (n33.Value == 3)
+                {
+                    label56.Text = label42.Text;
+                }
+                else if (n34.Value == 3)
+                {
+                    label56.Text = label43.Text;
+                }
+                else
+                {
+                    label56.Text = null;
+                }
+
+                if (n35.Value == 3 && n36.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label57.Text = null;
+                }
+                else
+                if (n35.Value == 3)
+                {
+                    label57.Text = label44.Text;
+                }
+                else if (n36.Value == 3)
+                {
+                    label57.Text = label45.Text;
+                }
+                else
+                {
+                    label57.Text = null;
+                }
+
+                if (n37.Value == 3 && n38.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label58.Text = null;
+                }
+                else
+                if (n37.Value == 3)
+                {
+                    label58.Text = label46.Text;
+                }
+                else if (n38.Value == 3)
+                {
+                    label58.Text = label47.Text;
+                }
+                else
+                {
+                    label58.Text = null;
+                }
+
+                if (n39.Value == 3 && n40.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label59.Text = null;
+                }
+                else
+                 if (n39.Value == 3)
+                {
+                    label59.Text = label48.Text;
+                }
+                else if (n40.Value == 3)
+                {
+                    label59.Text = label49.Text;
+                }
+                else
+                {
+                    label59.Text = null;
+                }
+
+                if (n41.Value == 3 && n42.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label60.Text = null;
+                }
+                else
+                if (n41.Value == 3)
+                {
+                    label60.Text = label50.Text;
+                }
+                else if (n42.Value == 3)
+                {
+                    label60.Text = label51.Text;
+                }
+                else
+                {
+                    label60.Text = null;
+                }
+
+                if (n43.Value == 3 && n44.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label61.Text = null;
+                }
+                else
+                if (n43.Value == 3)
+                {
+                    label61.Text = label52.Text;
+                }
+                else if (n44.Value == 3)
+                {
+                    label61.Text = label53.Text;
+                }
+                else
+                {
+                    label61.Text = null;
+                }
+
+                if (n45.Value == 3 && n46.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label62.Text = null;
+                }
+                else
+                if (n45.Value == 3)
+                {
+                    label62.Text = label54.Text;
+                }
+                else if (n46.Value == 3)
+                {
+                    label62.Text = label55.Text;
+                }
+                else
+                {
+                    label62.Text = null;
+                }
+
+                if (n47.Value == 3 && n48.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label63.Text = null;
+                }
+                else
+                if (n47.Value == 3)
+                {
+                    label63.Text = label56.Text;
+                }
+                else if (n48.Value == 3)
+                {
+                    label63.Text = label57.Text;
+                }
+                else
+                {
+                    label63.Text = null;
+                }
+
+                if (n49.Value == 3 && n50.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label64.Text = null;
+                }
+                else
+                if (n49.Value == 3)
+                {
+                    label64.Text = label58.Text;
+                }
+                else if (n50.Value == 3)
+                {
+                    label64.Text = label59.Text;
+                }
+                else
+                {
+                    label64.Text = null;
+                }
+
+                if (n51.Value == 3 && n52.Value == 3)
+                {
+                    MessageBox.Show("You give same numbers");
+                    label65.Text = null;
+                }
+                else
+                if (n51.Value == 3)
+                {
+                    label65.Text = label60.Text;
+                }
+                else if (n52.Value == 3)
+                {
+                    label65.Text = label61.Text;
+                }
+                else
+                {
+                    label65.Text = null;
+                }
+
+            }
+
+            isRefresh = false;
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
             if (n == 0)
                 randomPermutation(1, 32);
@@ -182,82 +1202,83 @@ namespace Darts
             {
                 label25.Text = textBox1.Text;
             }
+            else
             if (random == 17)
-            {
-                label26.Text = textBox1.Text;
-            }
-            else
-            if (random == 18)
-            {
-                label27.Text = textBox1.Text;
-            }
-            else
-            if (random == 19)
-            {
-                label28.Text = textBox1.Text;
-            }
-            else
-            if (random == 20)
-            {
-                label29.Text = textBox1.Text;
-            }
-            else
-            if (random == 21)
-            {
-                label30.Text = textBox1.Text;
-            }
-            else
-            if (random == 22)
-            {
-                label31.Text = textBox1.Text;
-            }
-            else
-            if (random == 23)
-            {
-                label32.Text = textBox1.Text;
-            }
-            else
-            if (random == 24)
-            {
-                label33.Text = textBox1.Text;
-            }
-            if (random == 25)
-            {
-                label34.Text = textBox1.Text;
-            }
-            else
-            if (random == 26)
-            {
-                label35.Text = textBox1.Text;
-            }
-            else
-            if (random == 27)
-            {
-                label36.Text = textBox1.Text;
-            }
-            else
-            if (random == 28)
-            {
-                label37.Text = textBox1.Text;
-            }
-            else
-            if (random == 29)
             {
                 label38.Text = textBox1.Text;
             }
-            else if (random == 30)
+            else
+           if (random == 18)
             {
                 label39.Text = textBox1.Text;
             }
             else
-            if (random == 31)
+           if (random == 19)
             {
                 label40.Text = textBox1.Text;
             }
             else
-            if (random == 32)
+           if (random == 20)
             {
                 label41.Text = textBox1.Text;
+            }
+            else
+           if (random == 21)
+            {
+                label42.Text = textBox1.Text;
+            }
+            else
+           if (random == 22)
+            {
+                label43.Text = textBox1.Text;
+            }
+            else
+           if (random == 23)
+            {
+                label44.Text = textBox1.Text;
+            }
+            else
+           if (random == 24)
+            {
+                label45.Text = textBox1.Text;
+            }
+            if (random == 25)
+            {
+                label46.Text = textBox1.Text;
+            }
+            else
+            if (random == 26)
+            {
+                label47.Text = textBox1.Text;
+            }
+            else
+            if (random == 27)
+            {
+                label48.Text = textBox1.Text;
+            }
+            else
+            if (random == 28)
+            {
+                label49.Text = textBox1.Text;
+            }
+            else
+            if (random == 29)
+            {
+                label50.Text = textBox1.Text;
+            }
+            else if (random == 30)
+            {
+                label51.Text = textBox1.Text;
+            }
+            else
+            if (random == 31)
+            {
+                label52.Text = textBox1.Text;
+            }
+            else
+            if (random == 32)
+            {
+                label53.Text = textBox1.Text;
             }
             arr_count += 1;
             isButtonClicked = true;
@@ -283,34 +1304,27 @@ namespace Darts
             }
         }
 
-        private void textBox39_TextChanged(object sender, EventArgs e)
+        private void flowLayoutPanel36_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void Form13_Load(object sender, EventArgs e)
+        private void numericUpDown23_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            base.OnFormClosing(e);
-
-            if (e.CloseReason == CloseReason.WindowsShutDown) return;
-
-            // Confirm user wants to close
-            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
-            {
-                case DialogResult.No:
-                    e.Cancel = true;
-                    break;
-                default:
-                    break;
-
-            }
-            Application.Exit();
-
+            if (f4 == null)
+                f4 = new Form4();
+            f4.fo = label4.Text;
+            f4.Show();
+            n = 0;
+            i = 0;
+            arr_count = 0;
+            count = 0;
+            this.Hide();
         }
     }
 }

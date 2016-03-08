@@ -14,3 +14,20 @@ C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.Properties
 C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.csproj.GenerateResource.Cache
 C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.exe
 C:\Users\Stoilovi\Desktop\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.pdb
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\bin\Debug\Scoreboard.exe.config
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\bin\Debug\Scoreboard.exe
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\bin\Debug\Scoreboard.pdb
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.csprojResolveAssemblyReference.cache
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\MainScoreBoard.g.cs
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\App.g.cs
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard_MarkupCompile.cache
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard_MarkupCompile.lref
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\App.baml
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\MainScoreBoard.baml
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.g.resources
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.Properties.Resources.resources
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.csproj.GenerateResource.Cache
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.exe
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\obj\Debug\Scoreboard.pdb
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\bin\Debug\DartsLib.dll
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\Scoreboard\bin\Debug\DartsLib.pdb

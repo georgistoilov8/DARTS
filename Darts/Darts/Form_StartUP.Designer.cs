@@ -109,7 +109,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Location = new System.Drawing.Point(500, 400);
             this.Name = "Form_StartUP";
-            this.Text = "Form_StartUP";
+            this.Text = "Darts Pro 2016";
             this.Load += new System.EventHandler(this.Form_StartUP_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

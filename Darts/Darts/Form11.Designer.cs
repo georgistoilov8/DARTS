@@ -34,9 +34,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.n2 = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
             this.n1 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.n2 = new System.Windows.Forms.NumericUpDown();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
             this.n3 = new System.Windows.Forms.NumericUpDown();
@@ -91,8 +91,8 @@
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.n2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n2)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.n3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n4)).BeginInit();
@@ -200,18 +200,17 @@
             this.label10.TabIndex = 144;
             this.label10.Text = "  ";
             // 
-            // n2
+            // n1
             // 
-            this.n2.Location = new System.Drawing.Point(172, 34);
-            this.n2.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.n2.Maximum = new decimal(new int[] {
+            this.n1.Location = new System.Drawing.Point(172, 3);
+            this.n1.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.n2.Name = "n2";
-            this.n2.Size = new System.Drawing.Size(38, 20);
-            this.n2.TabIndex = 155;
+            this.n1.Name = "n1";
+            this.n1.Size = new System.Drawing.Size(38, 20);
+            this.n1.TabIndex = 154;
             // 
             // label11
             // 
@@ -225,17 +224,18 @@
             this.label11.TabIndex = 182;
             this.label11.Text = "  ";
             // 
-            // n1
+            // n2
             // 
-            this.n1.Location = new System.Drawing.Point(172, 3);
-            this.n1.Maximum = new decimal(new int[] {
+            this.n2.Location = new System.Drawing.Point(172, 34);
+            this.n2.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.n2.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.n1.Name = "n1";
-            this.n1.Size = new System.Drawing.Size(38, 20);
-            this.n1.TabIndex = 154;
+            this.n2.Name = "n2";
+            this.n2.Size = new System.Drawing.Size(38, 20);
+            this.n2.TabIndex = 155;
             // 
             // flowLayoutPanel3
             // 
@@ -821,6 +821,7 @@
             // 
             // Form11
             // 
+            this.AcceptButton = this.button4;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 697);
@@ -828,13 +829,13 @@
             this.MaximumSize = new System.Drawing.Size(1378, 736);
             this.Name = "Form11";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form11";
+            this.Text = "Darts Pro 2016";
             this.Load += new System.EventHandler(this.Form11_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.n2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n2)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.n3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n4)).EndInit();

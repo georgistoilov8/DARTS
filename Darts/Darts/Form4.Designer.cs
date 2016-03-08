@@ -101,7 +101,7 @@
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(280, 99);
+            this.label3.Location = new System.Drawing.Point(280, 100);
             this.label3.Margin = new System.Windows.Forms.Padding(6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(223, 24);
@@ -250,7 +250,7 @@
             this.tableLayoutPanel2.Controls.Add(this.radioButton2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.radioButton3, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(277, 132);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(277, 133);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -274,7 +274,7 @@
             this.MaximumSize = new System.Drawing.Size(1604, 900);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "Darts Pro 2016";
             this.Load += new System.EventHandler(this.Form4_Load_1);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel5.PerformLayout();

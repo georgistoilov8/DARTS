@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,12 @@ namespace Darts
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            ProcessStartInfo info = new ProcessStartInfo();
+
+            info.FileName = System.IO.Path.GetFullPath("Scoreboard.exe");
+            MessageBox.Show(info.FileName);
+            info.UseShellExecute = true;
+            Process p = Process.Start(info);
         }
 
         Form f1;

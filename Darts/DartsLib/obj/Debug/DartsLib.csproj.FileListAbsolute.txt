@@ -1,0 +1,5 @@
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\DartsLib\bin\Debug\DartsLib.dll
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\DartsLib\bin\Debug\DartsLib.pdb
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\DartsLib\obj\Debug\DartsLib.csprojResolveAssemblyReference.cache
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\DartsLib\obj\Debug\DartsLib.dll
+C:\Users\Ivo Gerginov\Documents\Projects\TuesDartsLeague\DARTS\Darts\DartsLib\obj\Debug\DartsLib.pdb

@@ -1,0 +1,61 @@
+﻿<Window x:Class="Scoreboard.MainScoreBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scoreboard"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="DartsLeague" Height="720" Width="1280">
+    <Grid x:Name="MainGrid" Background="DarkGreen">
+        <StackPanel x:Name="Player1" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+            <Label x:Name="Player1Name" Style="{StaticResource PlayerName}">Player 1</Label>
+            <Label x:Name="Player1Score"  Style="{StaticResource Score}">501</Label>
+            <ScrollViewer x:Name="Player1Throws" Height="380" FlowDirection="RightToLeft">
+                <StackPanel x:Name="ThrowList1" >
+
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+        <StackPanel x:Name="Player2" HorizontalAlignment="Right" VerticalAlignment="Stretch">
+            <Label x:Name="Player2Name" Style="{StaticResource PlayerName}">Player 2</Label>
+            <Label x:Name="Player2Score" Style="{StaticResource Score}">501</Label>
+            <ScrollViewer x:Name="Player2Throws" Height="380">
+                <StackPanel x:Name="ThrowList2" >
+                    
+                </StackPanel>   
+            </ScrollViewer>
+        </StackPanel>
+        <StackPanel x:Name="Input" HorizontalAlignment="Center"  VerticalAlignment="Top">
+            <TextBox x:Name="CurrentNumber" MaxLength="3" Width="160" Margin="20" FontSize="30" TextChanged="TextBox_TextChanged"></TextBox>
+            <Button x:Name="SubmitButton" IsDefault="True" Style="{StaticResource Golden}" Click="Button_Click">Запиши резултат</Button>
+            <Button x:Name="CancelButton" Style="{StaticResource Golden}">Върни назад</Button>
+        </StackPanel>
+        <Grid x:Name="StatsGrid" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="60" Width="560">
+            <StackPanel x:Name="Player1Stats" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+                <Label x:Name="Player1Legs" Style="{StaticResource BoardStats}"/>
+                <Label x:Name="Player1Sets" Style="{StaticResource BoardStats}"/>
+                <Label x:Name="Player1Avr" Style="{StaticResource BoardStats}"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                <Label Style="{StaticResource BoardStats}">LEGS</Label>
+                <Label Style="{StaticResource BoardStats}">SETS</Label>
+                <Label Style="{StaticResource BoardStats}">3 DART AVERAGE</Label>
+            </StackPanel>
+            <StackPanel x:Name="Player2Stats" HorizontalAlignment="Right" VerticalAlignment="Stretch">
+                <Label x:Name="Player2Legs" Style="{StaticResource BoardStats}"/>
+                <Label x:Name="Player2Sets" Style="{StaticResource BoardStats}"/>
+                <Label x:Name="Player2Avr" Style="{StaticResource BoardStats}"/>
+            </StackPanel>
+            
+        </Grid>
+        <StackPanel Margin="300,10,10,10" Width="50" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label x:Name="Player1ThrowFirst" Width="30" Height="30" Margin="10"></Label>
+            <Label x:Name="Player1ThrowTurn" Width="30" Height="30" Margin="10"></Label>
+        </StackPanel>
+        <StackPanel Margin="10,10,300,10" Width="50" Height="100" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Label x:Name="Player2ThrowFirst" Width="30" Height="30" Margin="10"></Label>
+            <Label x:Name="Player2ThrowTurn" Width="30" Height="30" Margin="10"></Label>
+        </StackPanel>
+    </Grid>
+</Window>
