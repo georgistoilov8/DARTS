@@ -1,5 +1,6 @@
 <?php include_once "common/header.php"; ?>
 
+<?php include_once "common/navbar.php"; ?>
 <div id="main">
 
    <noscript>This site just doesn't work, period, without JavaScript</noscript>

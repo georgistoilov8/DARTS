@@ -12,23 +12,14 @@
 </head>
 
 <body>
+  <div id="background"></div>
   <div id="page-wrap">
     <div id="header">
-      <h1><a href="/">Darts Pro 2016</a></h1>
-      <div id="nav">
-        <ul>
-          <div id="AllNav">
-            <li><a class="hvr-pulse hvr-shutter-out-horizontal" href="asd">Darts Pro 2016</a></li>
-            <li><a class="hvr-pulse hvr-shutter-out-horizontal" href="#home">Home</a></li>
-            <li><a class="hvr-pulse hvr-shutter-out-horizontal" href="#leaderboard">Leaderboard</a></li>
-            <li><a class="hvr-pulse hvr-shutter-out-horizontal" href="#contact">Contact</a></li>
-            <li><a class="hvr-pulse hvr-shutter-out-horizontal" href="#morestats">More Stats</a></li>
-          </div>
-          <div id="GreenAbout">
-            <li style="float:right"><a class="hvr-pulse hvr-shutter-out-horizontal active" href="#about">About</a></li>
-          </div>
-        </ul>
-      </div>
+
+        <div class="text-top-right-style">
+          <img src="images/darts.png" alt="Darts Pro 2016" style="width:100px;height:50px;">
+          <span class="right-flow ">Add some text here-></span>
+        </div>
 
       <div id="control">
 <!-- IF LOGGED IN
