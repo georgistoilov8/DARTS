@@ -2,7 +2,7 @@
 
 <?php include_once "common/navbar.php"; ?>
 
-<?php include_once "common/forgotpassword.php"; ?>
+<?php include_once "common/contactus.php"; ?>
 
 <?php include_once "common/sidebar.php"; ?>
 
