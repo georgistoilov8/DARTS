@@ -6,4 +6,4 @@
 
 <?php include_once "common/sidebar.php"; ?>
 
-<?php include_once "common/footer.php"; ?>
+<?php //include_once "common/footer.php"; ?>

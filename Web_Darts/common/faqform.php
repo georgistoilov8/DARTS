@@ -1,22 +1,25 @@
-<div class="container">
+<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+
+<div class="container" style="margin-top:40px;">
   <section>
+
     <div class="page-header" id="faq">
       <h2>FAQ.<small> Engaging with consumers.</small></h2>
-    </div><!-- End Page Header -->
+    </div>
 
     <div class="panel-group" id="accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
           <div class="panel-title">
             <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
-              Question one?
+              Who are we?
             </a>
-          </div><!-- End panel title -->
+          </div>
           <div id="collapse-1" class="panel-collapse collapse in">
             <div class="panel-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+              We are two young badass developers from TUES!
             </div>
-          </div><!-- End Panel collapse -->
+          </div>
         </div>
       </div>
 
@@ -24,14 +27,14 @@
         <div class="panel-heading">
           <div class="panel-title">
             <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
-              Question Two?
+              What are we doing?
             </a>
-          </div><!-- End panel title -->
+          </div>
           <div id="collapse-2" class="panel-collapse collapse">
             <div class="panel-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+              An awesome darts scoreboard and statistics app for the web.
             </div>
-          </div><!-- End Panel collapse -->
+          </div>
         </div>
       </div>
 
@@ -39,17 +42,32 @@
         <div class="panel-heading">
           <div class="panel-title">
             <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
-              Question Three?
+              Why should you use our app?
             </a>
-          </div><!-- End panel title -->
+          </div>
           <div id="collapse-3" class="panel-collapse collapse">
             <div class="panel-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+              Because we can track all the stats you need to enhance your game, and our scoreboard is pretty!!!
             </div>
-          </div><!-- End Panel collapse -->
+          </div>
         </div>
       </div>
-    </div><!-- End panel group -->
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <a href="#collapse-4" data-toggle="collapse" data-parent="#accordion">
+              Our introduction video.
+            </a>
+          </div>
+          <div id="collapse-4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <iframe title="YouTube video player" class="youtube-player" type="text/html" width="480" height="390" src="http://www.youtube.com/embed/icAFUlsysqg?rel=0" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
-</div><!-- End container -->
+</div>

@@ -1,5 +1,5 @@
   </div>
-  <footer class="footer-distributed footer site-footer">
+  <footer class="footer-distributed footer site-footer" style="position: relative; top: 15%;">
       <div class="container text-center">
       <hr>
       <ul class="list-inline">
@@ -14,16 +14,14 @@
         </a>
       </ul>
 
-
       <p>&copy; Copyright @ 2016</p>
 
-    </div><!-- end Container-->
+    </div>
 
 
   </footer>
-   <!-- Analytics here -->
-   <!-- Latest compiled and minified JavaScript -->
 
 </body>
 
 </html>
+<?php ob_end_flush(); ?>

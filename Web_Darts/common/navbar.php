@@ -1,19 +1,4 @@
-<!--
-<div id="nav">
-  <ul class="ul-nav">
-    <div id="AllNav">
-      <li><a class="hvr-pulse hvr-shutter-out-horizontal animsition-link" href="account.php">Darts Pro 2016</a></li>
-      <li><a class="hvr-pulse hvr-shutter-out-horizontal animsition-link" href="home.php">Home</a></li>
-      <li><a class="hvr-pulse hvr-shutter-out-horizontal animsition-link" href="#leaderboard">Leaderboard</a></li>
-      <li><a class="hvr-pulse hvr-shutter-out-horizontal animsition-link" href="#contact">Contact</a></li>
-      <li><a class="hvr-pulse hvr-shutter-out-horizontal animsition-link" href="#morestats">More Stats</a></li>
-    </div>
-    <div id="GreenAbout">
-      <li style="float:right"><a class="hvr-pulse hvr-shutter-out-horizontal" href="register.php">Register</a></li>
-    </div>
-  </ul>
-</div>
--->
+
 
 <!-- Navbar -->
   <nav class="navbar navbar-inverse navbar-absolute navbar-fixed-top" id="my-navbar">
@@ -33,7 +18,7 @@
 
         <ul class="nav navbar-nav">
           <li><a href="home.php">Home</a>
-          <li><a href="#gallery">Gallery</a>
+          <li><a href="gallery.php">Gallery</a>
           <li><a href="#features">Leaderboard</a>
           <li><a href="faq.php">FAQ</a>
           <li><a href="maincontactus.php">Contact Us</a>
