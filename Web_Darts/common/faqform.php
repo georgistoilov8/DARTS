@@ -62,7 +62,7 @@
           </div>
           <div id="collapse-4" class="panel-collapse collapse">
             <div class="panel-body">
-              <iframe title="YouTube video player" class="youtube-player" type="text/html" width="480" height="390" src="http://www.youtube.com/embed/icAFUlsysqg?rel=0" frameborder="0"></iframe>
+              
             </div>
           </div>
         </div>

@@ -2,11 +2,91 @@
 
 
 <?php 
-  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-	include_once "common/navbar_log.php";
-  } else {
-	include_once "common/navbar.php";
-  } 
+ 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+		include_once "common/navbar_log.php";
+  	} else {
+		include_once "common/navbar.php";
+  	} 
+  	$servername = "localhost";
+	$username1 = "root";
+	$password1 = "";
+	$dbname = "registrations";
+	$newURL = "http://77.70.92.71/htdocs/home.php";
+	// Create connection
+	$conn = new mysqli($servername, $username1, $password1, $dbname);
+
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
+	//PLAYERS ID
+	$getplayer1ID = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM Users WHERE username = '".$_SESSION['username']."'"));
+	$player1ID = $getplayer1ID['id'];
+	//echo $player1ID;
+	$getplayer2ID = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM Users WHERE username = '".$_SESSION['username_2']."'"));
+	$player2ID = $getplayer2ID['id'];
+	//echo $player2ID;
+
+	//PLAYERS WINS
+	$getplayer1Wins = mysqli_fetch_assoc(mysqli_query($conn, "SELECT wins FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1Wins = $getplayer1Wins['wins'];
+	//echo $player1Wins;
+	$getplayer2Wins = mysqli_fetch_assoc(mysqli_query($conn, "SELECT wins FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2Wins = $getplayer2Wins['wins'];
+
+	//PLAYERS LOSSES
+	$getplayer1Losses = mysqli_fetch_assoc(mysqli_query($conn, "SELECT losses FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1Losses = $getplayer1Losses['losses'];
+	//--------------------------------------
+	$getplayer2Losses = mysqli_fetch_assoc(mysqli_query($conn, "SELECT losses FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2Losses = $getplayer2Losses['losses'];
+
+	//PLAYERS CHECKOUTS
+	$getplayer1Checkouts = mysqli_fetch_assoc(mysqli_query($conn, "SELECT checkout FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1Checkouts = $getplayer1Checkouts['checkout'];
+	//--------------------------------------
+	$getplayer2Checkouts = mysqli_fetch_assoc(mysqli_query($conn, "SELECT checkout FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2Checkouts = $getplayer2Checkouts['checkout'];
+
+	//PLAYERS THREE DART AVERAGE
+	$getplayer1ThreeDartAverage = mysqli_fetch_assoc(mysqli_query($conn, "SELECT three_dart_average FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1ThreeDartAverage = $getplayer1ThreeDartAverage['three_dart_average'];
+	//--------------------------------------
+	$getplayer2ThreeDartAverage = mysqli_fetch_assoc(mysqli_query($conn, "SELECT three_dart_average FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2ThreeDartAverage = $getplayer2ThreeDartAverage['three_dart_average'];
+
+	//PLAYERS WIN LEGS
+	$getplayer1WinLegs = mysqli_fetch_assoc(mysqli_query($conn, "SELECT win-legs FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1WinLegs = $getplayer1WinLegs['win-legs'];
+	//--------------------------------------
+	$getplayer2WinLegs = mysqli_fetch_assoc(mysqli_query($conn, "SELECT win-legs FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2WinLegs = $getplayer2WinLegs['win-legs'];
+
+	//PLAYERS LOSE LEGS
+	$getplayer1LoseLegs = mysqli_fetch_assoc(mysqli_query($conn, "SELECT lose-legs FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1LoseLegs = $getplayer1LoseLegs['lose-legs'];
+	//--------------------------------------
+	$getplayer2LoseLegs = mysqli_fetch_assoc(mysqli_query($conn, "SELECT lose-legs FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2LoseLegs = $getplayer2LoseLegs['lose-legs'];
+
+	//PLAYERS WIN SETS
+	$getplayer1WinSets = mysqli_fetch_assoc(mysqli_query($conn, "SELECT win-sets FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1WinSets = $getplayer1WinSets['win-sets'];
+	//--------------------------------------
+	$getplayer2WinSets = mysqli_fetch_assoc(mysqli_query($conn, "SELECT win-sets FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2WinSets = $getplayer2WinSets['win-sets'];
+
+	//PLAYERS LOSE SETS
+	$getplayer1LoseSets = mysqli_fetch_assoc(mysqli_query($conn, "SELECT lose-sets FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
+	$player1LoseSets = $getplayer1LoseSets['lose-sets'];
+	//--------------------------------------
+	$getplayer2LoseSets = mysqli_fetch_assoc(mysqli_query($conn, "SELECT lose-sets FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
+	$player2LoseSets = $getplayer2LoseSets['lose-sets'];
+
+	function doSmth(){
+		echo "asdasdasd";
+	}
 ?>
 
 
@@ -114,6 +194,19 @@
 	var sets_player_2 = 0;
 	var sets = "<?php echo $_SESSION['setScore']; ?>";
 	var legs = "<?php echo $_SESSION['legScore']; ?>";
+	var player1w = "<?php echo $player1Wins; ?>";
+	var player1wins = parseInt(player1w);
+	var player2w = "<?php echo $player2Wins; ?>";
+	var player2wins = parseInt(player2w);
+	var player1l = "<?php echo $player1Losses; ?>";
+	var player1losses = parseInt(player1l);
+	var player2l = "<?php echo $player2Losses; ?>";
+	var player2losses = parseInt(player2l);
+
+	var player1ind = "<?php echo $player1ID ?>";
+	var player1id = parseInt(player1ind);
+	var player2ind = "<?php echo $player2ID ?>";
+	var player2id = parseInt(player2ind);
 </script>
 
 <head>
@@ -128,8 +221,8 @@
 				<div>
 					<form name="input2" style="margin-left: 30%; margin-right: 30%; margin-bottom:5%" onsubmit="changePlayer();return false;">
 					  	<label class="score">Score:</label>
-					  	<input type="text" id="score" name="score" maxlength="3" class="score_input"patern="\d"><br>
-					  	<input type="button" name="Cancel" class="btn btn-primary red" value="Cancel"/>
+					  	<input type="text" id="score" name="score" maxlength="3" class="score_input" patern="/d"><br>
+					  	<input type="button" name="Cancel" class="btn btn-primary red" value="Cancel" onclick="cancelThrow" />
 					  	<input id = "submit" type="submit" value="Submit" name="Submit" class="btn btn-primary blue" onclick="changePlayer(); return false"/>
 					</form>
 					
@@ -171,6 +264,37 @@
 							document.write(sets_player_2);
 						</script>
 					</label>
+				</div>
+				<div>
+					<label class="statsValPlate" name="player1wins" id="player1wins"> 
+						<script>
+							document.write(player1wins);
+						</script>
+					</label>
+					<label class="statsNamePlate"> Wins </label>
+					<label class="statsValPlate" name="player2wins" id="player2wins"> 
+						<script>
+							document.write(player2wins);
+						</script>
+					</label>
+				</div>
+				<div>
+					<label class="statsValPlate" name="player1losses" id="playe1losses">
+						<script>
+							document.write(player1losses);
+						</script>
+					</label>
+					<label class="statsNamePlate"> Losses </label>
+					<label class="statsValPlate" name="player2losses" id="player2losses">
+						<script>
+							document.write(player2losses);
+						</script>
+					</label>
+				</div>
+				<div>
+					<label class="statsValPlate" name="player1checkout"> 0 </label>
+					<label class="statsNamePlate"> Checkout % </label>
+					<label class="statsValPlate" name="player2checkout"> 0 </label>
 				</div>
 				<div>
 					<label class="statsValPlate" name="player1Avr"> 0 </label>
@@ -223,7 +347,12 @@
 	</div>
 </div>
 
-<script>
+<script type="text/javascript">
+
+	function cancelThrow()
+	{
+
+	}
 	function isNumber(n) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n); } 
 
 	var playerTurn = 0;
@@ -237,7 +366,19 @@
     	document.getElementById('label2p2').innerHTML = b;
     	document.getElementById('label3p2').innerHTML = c;
 	}
+	function myMethod()
+    {
+        $.post("common/file.php");
+    }
+
 	function changePlayer() {
+		var textarea = document.getElementById('txt1');
+		textarea.scrollTop = textarea.scrollHeight;
+		var textarea2 = document.getElementById('txt2');
+		textarea2.scrollTop = textarea2.scrollHeight;
+		var http = new XMLHttpRequest();
+		var url = "";
+		var params = "";
 		var score = +document.getElementById("score").value;
 		if(!isNumber(score)){
 			alert("Not a Number!");
@@ -249,13 +390,13 @@
 		}else if(score > 180){
 			alert("You can not input numbers bigger than 180");
 			return;
-		}else if(score)
+		}else
 		if(playerTurn == 0){
 			
 			document.getElementById("txt1").value += score;
 			document.getElementById("txt1").value += "\n";
 			new_score_player_1 -= score;
-			if((new_score_player_1) < 0){
+			if((new_score_player_1) < 0 || new_score_player_1 == 1){
 				alert("You exceeded your score.");
 				new_score_player_1 += score;
 				alert(new_score_player_1);
@@ -269,11 +410,29 @@
 					legs_player_2 = 0;
 					document.getElementById("l_player_2").innerHTML = legs_player_2;
 					if(sets_player_1 >= sets){
+						player1wins += 1;
+						player2losses += 1;
+						
+						url = "common/Statistics/player1win.php";
+						params = "player1Win="+player1wins+"&player2Lose="+player2losses+"&player1id="+player1id+"&player2id="+player2id;
+						http.open("POST", url, true);
+
+						http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+						http.send(params);
+						/*http.onreadystatechange = function() {//Call a function when the state changes.
+						    if(http.readyState == 4 && http.status == 200) {
+						        alert(http.responseText);
+						    }
+						}*/
 						alert("Player 1 wins. Congratulations");
 						sets_player_1 = 0;
 						sets_player_2 = 0;
 						legs_player_1 = 0;
 						legs_player_2 = 0;
+						document.getElementById("player1wins").innerHTML = player1wins;
+						document.getElementById("player2losses").innerHTML = player2losses;
+
 						document.getElementById("player2set").innerHTML = sets_player_2;
 						document.getElementById("player1set").innerHTML = sets_player_1;
 						new_score_player_1 = "<?php echo $_SESSION['gameScore']; ?>";
@@ -295,7 +454,7 @@
 			document.getElementById("num1").innerHTML = new_score_player_1;
 			document.getElementById("score").value = null;
 			playerTurn = 1;
-			console.log(1);
+			//console.log(1);
 			document.getElementById("p2").style.borderColor = "#00FF00";
 			document.getElementById("p1").style.borderColor = "#338A94";
 		} else {
@@ -303,7 +462,7 @@
 			document.getElementById("txt2").value += score;
 			document.getElementById("txt2").value += "\n";
 			new_score_player_2 -= score;	
-			if((new_score_player_2) < 0){
+			if((new_score_player_2) < 0 || new_score_player_2 == 1){
 				alert("You exceeded your score.");
 				new_score_player_2 += score;
 				return;
@@ -316,11 +475,25 @@
 					legs_player_2 = 0;
 					document.getElementById("l_player_1").innerHTML = legs_player_1;
 					if(sets_player_2 >= sets){
+						player2wins += 1;
+						player1losses += 1;
+						
+						url = "common/Statistics/player2win.php";
+						params = "player1Lose="+player1losses+"&player2Win="+player2wins+"&player1id="+player1id+"&player2id="+player2id;
+						http.open("POST", url, true);
+
+						http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+						http.send(params);
+
 						alert("Player 2 wins. Congratulations");
 						sets_player_1 = 0;
 						sets_player_2 = 0;
 						legs_player_1 = 0;
 						legs_player_2 = 0;
+						document.getElementById("player2wins").innerHTML = player2wins;
+						document.getElementById("player1losses").innerHTML = player1losses;
+
 						document.getElementById("player2set").innerHTML = sets_player_2;
 						document.getElementById("player1set").innerHTML = sets_player_1;
 						new_score_player_1 = "<?php echo $_SESSION['gameScore']; ?>";
@@ -344,7 +517,7 @@
 			document.getElementById("num2").innerHTML = new_score_player_2;
 			document.getElementById("score").value = null;
 			playerTurn = 0;
-			console.log(0);
+			//console.log(0);
 			document.getElementById("p1").style.borderColor = "#00FF00";
 			document.getElementById("p2").style.borderColor = "#AD4257";
 		}
@@ -733,19 +906,7 @@
 
 <?php
 /*
-	$servername = "localhost";
-	$username1 = "root";
-	$password1 = "";
-	$dbname = "registrations";
-	$newURL = "http://77.70.92.71/htdocs/home.php";
-	// Create connection
-	$conn = new mysqli($servername, $username1, $password1, $dbname);
-
-	// Check connection
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}
-	function log_p1(){
+	
 		if(isset($_POST['lg_username_p1']) && !empty($_POST['lg_username_p1']) AND isset($_POST['lg_password_p1']) && !empty($_POST['lg_password_p1'])){
 			$username = mysqli_escape_string($conn, $_POST['lg_username']);
 			$password = mysqli_escape_string($conn, md5($_POST['lg_password']));
@@ -766,9 +927,9 @@
 				echo $msg = 'Login Failed! Please make sure that you enter the correct details and that you have activated your account.';
 			}
 		}
-	}
+*/	
 
-*/
+
 ?>
 <?php include_once "common/sidebar.php"; ?>
 

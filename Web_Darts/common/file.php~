@@ -1,0 +1,7 @@
+<?php 
+	echo "<script>alert("yes be");</script>"
+	echo "heelo world"; 
+	$player1wins = intval($_GET['player1win']);
+	echo "\n";
+	echo $player1wins;
+?>

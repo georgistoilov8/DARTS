@@ -1,5 +1,8 @@
 <?php include_once "common/header.php"; ?>
-
+<?php 
+	$_SESSION['username_2'] = "";
+	$_SESSION['loggedin_2'] = false;
+?>
 <div id="main">
     <div class="divform" style="text-align: center">
 	   	<form method="get" action="gamemode.php">

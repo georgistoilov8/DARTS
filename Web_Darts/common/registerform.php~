@@ -286,7 +286,7 @@ if(isset($_POST['reg_button'])){
       $getID = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM Users WHERE username = '".$username."'"));
       $id = $getID['id'];
  
-      mysqli_query($conn, "INSERT INTO Statistics (playerid) VALUES('".$id."')") or die('Connect Error: ' . $conn->connect_error);	
+      mysqli_query($conn, "INSERT INTO Statistics (playerid, wins, losses, checkout, three_dart_average, win-legs, lose-legs, win-sets, lose-sets) VALUES('".$id."',1,1,1,1,1,1,1,1)") or die('Connect Error: ' . $conn->connect_error);	
       $to      = $email; // Send email to our user
       $subject = 'Signup | Verification'; // Give the email a subject
       $message = '
