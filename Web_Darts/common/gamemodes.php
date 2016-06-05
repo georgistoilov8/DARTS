@@ -1,16 +1,16 @@
 <?php
-    
-    if (isset($_POST['submit'])) {
-        $_SESSION['gameScore'] = $_POST['scoreSelect'];
-        $_SESSION['legScore'] = $_POST['legSelect'];
-        $_SESSION['setScore'] = $_POST['setSelect'];
-        header("refresh:0;url=http://77.70.92.71/htdocs/scoreboard.php", true);
-    }
-    $servername = "localhost";
+
+  if (isset($_POST['submit'])) {
+      $_SESSION['gameScore'] = $_POST['scoreSelect'];
+      $_SESSION['legScore'] = $_POST['legSelect'];
+      $_SESSION['setScore'] = $_POST['setSelect'];
+      header("refresh:0;url=http://localhost/scoreboard.php", true);
+  }
+  $servername = "localhost";
 	$username1 = "root";
 	$password1 = "";
 	$dbname = "registrations";
-	$newURL = "http://77.70.92.71/htdocs/home.php";
+	$newURL = "http://localhost/home.php";
 	// Create connection
 	$conn = new mysqli($servername, $username1, $password1, $dbname);
 
@@ -19,7 +19,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 
-	$user_name = $user_nameErr = $pass_word = $pass_Err = "";
+	$user_name = $user_nameErr = $pass_word = $pass_Err = $msg = "";
 	if (empty($_POST["lg_username"])) {
        //$user_nameErr = "Username is required";
      } else {
@@ -53,7 +53,7 @@
 				$_SESSION['loggedin'] = true;
 	    		$_SESSION['username'] = $username;
 	    		//header("refresh:2;url=".$newURL, true);
-				header('Location: http://77.70.92.71/htdocs/gamemode.php', true);
+				header('Location: http://localhost/gamemode.php', true);
 				die();
 				// Set cookie / Start Session / Start Download etc...
 			}else{
@@ -84,7 +84,7 @@
 				</label>
 			</div>
 			<div style="text-align:cetner; position: relative; margin-top:6%; margin-left:10%; margin-right:25%">
-				<label class="Plate">	
+				<label class="Plate">
 					<label>Legs Format</label>
 					<select name="legSelect">
 			  			<option value="2">2 of 3</option>
@@ -109,10 +109,10 @@
 				<button id="submit" name ="submit" class="btn btn-primary red">Start Game</a><br>
 			</div>
 		</form>
-	</div>	
+	</div>
 
-	
-	<div class="col-md-pull-6 col-md-3 col-xs-6" style="text-align:center;">	
+
+	<div class="col-md-pull-6 col-md-3 col-xs-6" style="text-align:center;">
 	<div class="score">Player 1</div>
 		<div class="login-form-1">
 		<form id="login-form" class="text-left" method="post" >
@@ -134,9 +134,9 @@
 		    <div style="color:red;font-size:15px"><?php echo $pass_Err;?></div>
 		    <div style="color:red;font-size:15px"><?php echo $msg;?></div>
 		</form>
-		</div>	
+		</div>
 	</div>
-	
+
 	<div class="col-md-3 col-xs-6" style="text-align:center;">
 		<div class="score">Player 2</div>
 		<div class="login-form-1">
@@ -156,6 +156,6 @@
 				</div>
 			</div>
 		</form>
-		</div>	
+		</div>
 	</div>
 </div>

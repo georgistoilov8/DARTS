@@ -12,7 +12,7 @@
     echo "autism";
    // echo mysqli_connect($servername, $username1, $password1, $dbname);
     $conn = new mysqli($servername, $username1, $password1, $dbname);
-    
+
     if (!$conn) {
         echo "Error: Unable to connect to MySQL." . PHP_EOL;
         echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -285,8 +285,8 @@ if(isset($_POST['reg_button'])){
 
       $getID = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id FROM Users WHERE username = '".$username."'"));
       $id = $getID['id'];
- 
-      mysqli_query($conn, "INSERT INTO Statistics (playerid) VALUES('".$id."')") or die('Connect Error: ' . $conn->connect_error);	
+
+      mysqli_query($conn, "INSERT INTO Statistics (playerid) VALUES('".$id."')") or die('Connect Error: ' . $conn->connect_error);
       $to      = $email; // Send email to our user
       $subject = 'Signup | Verification'; // Give the email a subject
       $message = '
@@ -300,7 +300,7 @@ if(isset($_POST['reg_button'])){
       ------------------------
 
       Please click this link or copy it to the URL section of your browser to activate your account:
-      http://77.70.92.71/htdocs/verify.php?email=' . $email . '&hash=' . $hash . '
+      http://localhost/verify.php?email=' . $email . '&hash=' . $hash . '
 
       '; // Our message above including the link
 

@@ -3,7 +3,7 @@
 	$username1 = "root";
 	$password1 = "";
 	$dbname = "registrations";
-	$newURL = "http://77.70.92.71/htdocs/home.php";
+	$newURL = "http://localhost/home.php";
 	// Create connection
 	$conn = new mysqli($servername, $username1, $password1, $dbname);
 
@@ -12,7 +12,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 
-	$user_name = $user_nameErr = $pass_word = $pass_Err = "";
+	$user_name = $user_nameErr = $pass_word = $pass_Err = $msg = "";
 	if (empty($_POST["lg_username"])) {
        //$user_nameErr = "Username is required";
      } else {
