@@ -12,8 +12,8 @@
     <ul>4.1. First you need to start the application. Go to the folder where you install your xampp and there must be some file like this - xampp-control.exe. When you start it the following window should pop up: http://imgur.com/xHnU6XG .<br/>
     4.2. After you can see this window, you need to click the button Start on Apache and MySQL. And you should see something like this: http://imgur.com/tTfTe2p . If you have problem with starting Apache you should know that Skype use the ports, which Apache need. So you can go to Skype Settings, then go to Expanded Settings and there to Connection. Then remove the tick from "Use port 80 and 443". Save and try again. If you have again problem with starting apache you can GOOGLE your problem or connect with us to try to solve your problem. Our mail: dartspro2016@gmail.com.<br/>
     4.3. Once you start all these things you can close this window and do the following:<br/></ul>
-        <ul>4.3.1. First go to the download directory from the beggining. Copy all files from this folder and paste them into xampp/htdocs/<br/>
-        4.3.2. After you done this just time in url: localhost/ and you should see our application.<br/></ul>
+          <ul>4.3.1. First go to the download directory from the beggining. Copy all files from this folder and paste them into xampp/htdocs/<br/>
+          4.3.2. After you done this just time in url: localhost/ and you should see our application.<br/></ul>
   5. What to do on Apache <br/>
 
 ##Video
