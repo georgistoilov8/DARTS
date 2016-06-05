@@ -1,10 +1,10 @@
 <?php
-    
+
     if (isset($_POST['submit'])) {
         $_SESSION['gameScore'] = $_POST['scoreSelect'];
         $_SESSION['legScore'] = $_POST['legSelect'];
         $_SESSION['setScore'] = $_POST['setSelect'];
-        header("refresh:0;url=http://77.70.92.71/htdocs/scoreboard.php", true);
+        header("refresh:0;url=http://localhost/scoreboard.php", true);
     }
 ?>
 
@@ -23,7 +23,7 @@
 				</label>
 			</div>
 			<div style="text-align:cetner; position: relative; margin-top:6%; margin-left:10%; margin-right:25%">
-				<label class="Plate">	
+				<label class="Plate">
 					<label>Legs Format</label>
 					<select name="legSelect">
 			  			<option value="2">2 of 3</option>
@@ -48,14 +48,14 @@
 				<button id="submit" name ="submit" class="btn btn-primary red">Start Game</a><br>
 			</div>
 		</form>
-	</div>	
-
-	
-	<div class="col-md-pull-6 col-md-3 col-xs-6" style="text-align:center;">	
-	<div class="score">Player 1 is ready</div>
-		
 	</div>
-	
+
+
+	<div class="col-md-pull-6 col-md-3 col-xs-6" style="text-align:center;">
+	<div class="score">Player 1 is ready</div>
+
+	</div>
+
 	<div class="col-md-3 col-xs-6" style="text-align:center;">
 		<div class="score">Player 2 is ready</div>
 	</div>

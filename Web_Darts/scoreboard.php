@@ -1,13 +1,13 @@
 <?php include_once "common/header.php"; ?>
 
 
-<?php 
+<?php
  	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 		include_once "common/navbar_log.php";
   	} else {
 		include_once "common/navbar.php";
-  	} 
-  	$servername = "localhost";
+  	}
+  $servername = "localhost";
 	$username1 = "root";
 	$password1 = "";
 	$dbname = "registrations";
@@ -56,7 +56,7 @@
 	$getplayer2ThreeDartAverage = mysqli_fetch_assoc(mysqli_query($conn, "SELECT three_dart_average FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
 	$player2ThreeDartAverage = $getplayer2ThreeDartAverage['three_dart_average'];
 
-	//PLAYERS WIN LEGS
+	/*//PLAYERS WIN LEGS
 	$getplayer1WinLegs = mysqli_fetch_assoc(mysqli_query($conn, "SELECT win-legs FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username']."' "));
 	$player1WinLegs = $getplayer1WinLegs['win-legs'];
 	//--------------------------------------
@@ -82,7 +82,7 @@
 	$player1LoseSets = $getplayer1LoseSets['lose-sets'];
 	//--------------------------------------
 	$getplayer2LoseSets = mysqli_fetch_assoc(mysqli_query($conn, "SELECT lose-sets FROM Users JOIN Statistics ON (id=playerID) WHERE username = '".$_SESSION['username_2']."' "));
-	$player2LoseSets = $getplayer2LoseSets['lose-sets'];
+	$player2LoseSets = $getplayer2LoseSets['lose-sets'];*/
 
 	function doSmth(){
 		echo "asdasdasd";
@@ -92,7 +92,7 @@
 
 <style>
 #p1 {
-    border: solid #00FF00; 
+    border: solid #00FF00;
     border-radius: 10px;
     background-color: #48C6D4;
     margin: 6px;
@@ -106,9 +106,9 @@
 }
 
 .good_looking_div {
-	position: relative; 
-	color:white; 
-	display:none; 
+	position: relative;
+	color:white;
+	display:none;
 	height: 50px;
 	border: 8px rgb(250, 178, 0) double;
 
@@ -139,9 +139,9 @@
 }
 
 .div_double {
-	position: relative; 
-	color:white; 
-	display:none; 
+	position: relative;
+	color:white;
+	display:none;
 	height: 50px;
 	border: 8px rgb(250, 178, 0) double;
 
@@ -216,7 +216,7 @@
 <div id="main">
 	<div class="divform">
 		<span>
-			
+
 			<div class="col-md-push-3 col-md-6 col-xs-12" style="text-align:center">
 				<div>
 					<form name="input2" style="margin-left: 30%; margin-right: 30%; margin-bottom:5%" onsubmit="changePlayer();return false;">
@@ -225,7 +225,7 @@
 					  	<input type="button" name="Cancel" class="btn btn-primary red" value="Cancel" onclick="cancelThrow" />
 					  	<input id = "submit" type="submit" value="Submit" name="Submit" class="btn btn-primary blue" onclick="changePlayer(); return false"/>
 					</form>
-					
+
 					<span>
 						<label class="scorePlate" id="num1" value="501">
 							<script>
@@ -240,39 +240,39 @@
 					</span>
 				</div>
 				<div>
-					<label id="l_player_1" class="statsValPlate" name="player1Legs"> 
+					<label id="l_player_1" class="statsValPlate" name="player1Legs">
 						<script>
 							document.write(legs_player_1);
 						</script>
 					</label>
 					<label class="statsNamePlate"> Legs </label>
-					<label id="l_player_2" class="statsValPlate" name="player2Legs"> 
+					<label id="l_player_2" class="statsValPlate" name="player2Legs">
 						<script>
 							document.write(legs_player_2);
 						</script>
 					</label>
 				</div>
 				<div>
-					<label class="statsValPlate" name="player1Sets" id="player1set"> 
+					<label class="statsValPlate" name="player1Sets" id="player1set">
 						 <script>
 							document.write(sets_player_1);
 						</script>
 					</label>
 					<label class="statsNamePlate"> Sets </label>
-					<label class="statsValPlate" name="player2Sets" id="player2set">  
+					<label class="statsValPlate" name="player2Sets" id="player2set">
 						<script>
 							document.write(sets_player_2);
 						</script>
 					</label>
 				</div>
 				<div>
-					<label class="statsValPlate" name="player1wins" id="player1wins"> 
+					<label class="statsValPlate" name="player1wins" id="player1wins">
 						<script>
 							document.write(player1wins);
 						</script>
 					</label>
 					<label class="statsNamePlate"> Wins </label>
-					<label class="statsValPlate" name="player2wins" id="player2wins"> 
+					<label class="statsValPlate" name="player2wins" id="player2wins">
 						<script>
 							document.write(player2wins);
 						</script>
@@ -301,8 +301,8 @@
 					<label class="statsNamePlate"> 3-Dart Average </label>
 					<label class="statsValPlate" name="player2Avr"> 0 </label>
 				</div>
-			</div>	
-			<div class="col-md-pull-6 col-md-3 col-xs-6" style="text-align:center">	
+			</div>
+			<div class="col-md-pull-6 col-md-3 col-xs-6" style="text-align:center">
 					<div id="p1">
 						<label><?php echo $_SESSION['username']?></label><br>
 					</div>
@@ -353,15 +353,15 @@
 	{
 
 	}
-	function isNumber(n) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n); } 
+	function isNumber(n) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n); }
 
 	var playerTurn = 0;
-	function setLabelsP1(a,b,c){	
+	function setLabelsP1(a,b,c){
     	document.getElementById('first_label').innerHTML = a;
     	document.getElementById('second_label').innerHTML = b;
     	document.getElementById('third_label').innerHTML = c;
 	}
-	function setLabelsP2(a,b,c){	
+	function setLabelsP2(a,b,c){
     	document.getElementById('label1p2').innerHTML = a;
     	document.getElementById('label2p2').innerHTML = b;
     	document.getElementById('label3p2').innerHTML = c;
@@ -392,7 +392,7 @@
 			return;
 		}else
 		if(playerTurn == 0){
-			
+
 			document.getElementById("txt1").value += score;
 			document.getElementById("txt1").value += "\n";
 			new_score_player_1 -= score;
@@ -412,7 +412,7 @@
 					if(sets_player_1 >= sets){
 						player1wins += 1;
 						player2losses += 1;
-						
+
 						url = "common/Statistics/player1win.php";
 						params = "player1Win="+player1wins+"&player2Lose="+player2losses+"&player1id="+player1id+"&player2id="+player2id;
 						http.open("POST", url, true);
@@ -458,10 +458,10 @@
 			document.getElementById("p2").style.borderColor = "#00FF00";
 			document.getElementById("p1").style.borderColor = "#338A94";
 		} else {
-			
+
 			document.getElementById("txt2").value += score;
 			document.getElementById("txt2").value += "\n";
-			new_score_player_2 -= score;	
+			new_score_player_2 -= score;
 			if((new_score_player_2) < 0 || new_score_player_2 == 1){
 				alert("You exceeded your score.");
 				new_score_player_2 += score;
@@ -477,7 +477,7 @@
 					if(sets_player_2 >= sets){
 						player2wins += 1;
 						player1losses += 1;
-						
+
 						url = "common/Statistics/player2win.php";
 						params = "player1Lose="+player1losses+"&player2Win="+player2wins+"&player1id="+player1id+"&player2id="+player2id;
 						http.open("POST", url, true);
@@ -500,11 +500,11 @@
 						new_score_player_2 = "<?php echo $_SESSION['gameScore']; ?>";
 						document.getElementById("txt2").value += "NEW GAME\n";
 						document.getElementById("txt1").value += "\nNEW GAME";
-						
+
 					}
 					document.getElementById("txt1").value += "\nNEW SET.\n";
 					document.getElementById("txt2").value += "NEW SET.\n";
-					
+
 				}
 				document.getElementById("l_player_2").innerHTML = legs_player_2;
 				new_score_player_1 = "<?php echo $_SESSION['gameScore']; ?>";
@@ -531,7 +531,7 @@
 	        $('#div3p1').slideDown('slow', function () {
 	            // Animation complete.
 	        });
-	        
+
 	        switch(new_score_player_1){
 	        	case 170: setLabelsP1("T20","T20","DB"); break;
 	        	case 167: setLabelsP1("T20","T19","DB"); break;
@@ -699,7 +699,7 @@
 	        //-------------------------------------------------------------------------------------------------------------------------------------
 	        //-------------------------------------------------------------------------------------------------------------------------------------
 	        //-------------------------------------------------------------------------------------------------------------------------------------
-			
+
 		}
 		if (new_score_player_2 < 171 && new_score_player_2 != 169 && new_score_player_2 != 168 && new_score_player_2 != 166 && new_score_player_2!= 165 && new_score_player_2 != 163 && new_score_player_2 != 162 && new_score_player_2 != 159) {
 		  	$('#div1p2').slideDown('slow', function () {
@@ -906,7 +906,7 @@
 
 <?php
 /*
-	
+
 		if(isset($_POST['lg_username_p1']) && !empty($_POST['lg_username_p1']) AND isset($_POST['lg_password_p1']) && !empty($_POST['lg_password_p1'])){
 			$username = mysqli_escape_string($conn, $_POST['lg_username']);
 			$password = mysqli_escape_string($conn, md5($_POST['lg_password']));
@@ -927,7 +927,7 @@
 				echo $msg = 'Login Failed! Please make sure that you enter the correct details and that you have activated your account.';
 			}
 		}
-*/	
+*/
 
 
 ?>

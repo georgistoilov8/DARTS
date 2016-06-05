@@ -1,4 +1,4 @@
-<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
 <div class="container" style="margin-top:40px;">
   <section>
@@ -62,7 +62,7 @@
           </div>
           <div id="collapse-4" class="panel-collapse collapse">
             <div class="panel-body">
-              
+
             </div>
           </div>
         </div>
