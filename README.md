@@ -24,9 +24,9 @@
     4.8. If everything is alright then you just need to play one game and to see if Statistics is working. If it is then you are ready to play with your friends darts and track the scoreboard with our application.
     </ul>
   5. What to do on Apache <br/>
-    Soon ...
+    Coming soon...
 
-#If you don't want to do this many many steps you can simply go to 77.70.92.71/htdocs/home.php and use it for free.
+#####If you don't want to do this many many steps you can simply go to 77.70.92.71/htdocs/home.php and use it for free.
 
 ##Video
 ###Our video for this application. We gonna show you what you can do in it.
