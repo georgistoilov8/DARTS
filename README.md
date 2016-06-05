@@ -20,9 +20,15 @@
     4.4. Next step is to configure the database. For this you need to go to /localhost/phpmyadmin . There on the left side of the screen you should see field with many databases and on top of them "New". When you click new you will be asked for name of the database. To work our application correctly you need to baptize your database as registrations. And click the button Create. After that you need to create two tables. The first table you should name it Users and give it 9 columns. After that just copy from the picture all things: http://imgur.com/P3cCmJX . Then click Save.</br>
     4.5. To try new database if it works you can made registration on our application. After you made your first registration, go to localhost/phpmyadmin , find our new created database, then find Users and after clicking on it you should see your registration. If you don't see it remove all database and do the step before again.</br>
     4.6. Our next table is called Statistics. To make new Table you should click on our "registration" database and under it you should see "New". Click it. And then just do this things: http://imgur.com/pcZr49k . But before we check is this table works properly we have more settings to do.</br>
-    <ul>
+    4.7. Because our application sends verification e-mail you should install some application to do the work. We use hmailserver - https://www.hmailserver.com/download. After installing it go to the folder where you installed it. Open the application and go to Settings/Advanced/Ip Ranges/ and do this settings - http://imgur.com/YATzWpU .
+    4.8. If everything is alright then you just need to play one game and to see if Statistics is working. If it is then you are ready to play with your friends darts and track the scoreboard with our application.
+    </ul>
   5. What to do on Apache <br/>
+    Soon ...
+
+#If you don't want to do this many many steps you can simply go to 77.70.92.71/htdocs/home.php and use it for free.
 
 ##Video
-###Description
+###Our video for this application. We gonna show you what you can do in it.
+###Link - 
 ###Language - English
