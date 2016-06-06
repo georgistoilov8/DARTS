@@ -77,7 +77,6 @@ script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
           </div>
           <div id="collapse-4" class="panel-collapse collapse">
             <div class="panel-body">
-<<<<<<< HEAD
             	The features of the website will be free to all registered users. Registration is free of charge.
 		A desktop version of the entire service will be available soon. That version will be available for 
 		purchase, price is yet to be determined. The desktop version will offer offline support. This means
@@ -131,10 +130,7 @@ script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
           </div>
           <div id="collapse-7" class="panel-collapse collapse">
             <div class="panel-body">
-              
-=======
-
->>>>>>> f95aa99d491d57c2d29804f214369d6d8659b4a7
+ 
             </div>
           </div>
         </div>
