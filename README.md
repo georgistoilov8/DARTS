@@ -14,7 +14,7 @@
     4.3. Once you start all these things you can close this window and do the following:<br/></ul>
           <ul><ul>
           4.3.1. First go to the download directory from the beggining. Copy all files from this folder and paste them into xampp/htdocs/<br/>
-          4.3.2. After you done this just time in url: localhost/ and you should see our application.<br/>
+          4.3.2. After you done this just type in url: localhost/ and you should see our application.<br/>
           </ul></ul>
     <ul>
     4.4. Next step is to configure the database. For this you need to go to /localhost/phpmyadmin . There on the left side of the screen you should see field with many databases and on top of them "New". When you click new you will be asked for name of the database. To work our application correctly you need to baptize your database as registrations. And click the button Create. After that you need to create two tables. The first table you should name it Users and give it 9 columns. After that just copy from the picture all things: http://imgur.com/P3cCmJX . Then click Save.</br>
