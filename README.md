@@ -26,9 +26,4 @@
   5. What to do on Apache <br/>
     Coming soon...
 
-#####If you don't want to do this many many steps you can simply go to 77.70.92.71/htdocs/home.php and use it for free.
-
-##Video
-###Our video for this application. We gonna show you what you can do in it.
-###Link - 
-###Language - English
+### Language - English
